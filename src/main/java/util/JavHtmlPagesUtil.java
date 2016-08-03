@@ -12,7 +12,7 @@ public class JavHtmlPagesUtil {
 			Elements select = doc.select(".page_selector a");
 			if (select != null && select.last() != null) {
 				String lastHref = select.last().attr("href");
-				return BasicNumberUtil.getNumber(PatternUtil.getLastPattern(lastHref, "\\d"));
+				return BasicNumberUtil.getNumber(PatternUtil.getLastPattern(lastHref, "\\d+"));
 			}
 			// 如果只有一页,没有那么多选项
 			return 1;

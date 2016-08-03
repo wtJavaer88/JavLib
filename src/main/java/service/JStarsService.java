@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 import bean.JStar;
 import common.ErrorCode;
@@ -21,7 +20,7 @@ public class JStarsService implements IJavServie<JStar> {
 		// .staralphabets .alphabet
 		List<JStar> stars = new ArrayList<JStar>();
 
-		String url = "http://j8vlib.com/cn/star_list.php";
+		String url = "http://j8vlib.com/cn/star_list.php?prefix=A";
 		Document doc = null;
 		try {
 			doc = DocumentUtil.getDoc(url);
@@ -31,9 +30,13 @@ public class JStarsService implements IJavServie<JStar> {
 		if (doc == null) {
 			throw new JavException(ErrorCode.URL_PARSE_ERROR, "page解析失败:" + url);
 		}
-		doc.select(".staralphabets .alphabet");
+		getAll(url);
 		for (Element element : doc.select(".staralphabets .alphabet")) {
-			System.out.println(element.text());
+			if (element.select("a").first() != null) {
+				String absUrl = element.select("a").first().absUrl("href");
+				System.out.println(absUrl);
+				getAll(absUrl);
+			}
 		}
 		return stars;
 	}
@@ -69,17 +72,12 @@ public class JStarsService implements IJavServie<JStar> {
 
 	public List<JStar> getByDocument(Document doc) {
 		if (doc != null) {
-			Elements videos = doc.select(".videos .video");
-			for (Element element : videos) {
-				String videoUrl = element.select("a").first().absUrl("href");
-				System.out.println(videoUrl);
-				try {
-					List<JStar> stars = new StarService().getStars(doc);
-					System.out.println(stars);
-				} catch (Exception e) {
-					System.out.println(videoUrl + e.getMessage());
-					// e.printStackTrace();
-				}
+			try {
+				List<JStar> stars = new StarService().getStars(doc);
+				System.out.println(stars);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				// e.printStackTrace();
 			}
 		}
 		return null;
