@@ -46,7 +46,6 @@ public class DbExecMgr {
 	public static Map getSelectSqlMap(String sql) {
 
 		Statement statement = null;
-		System.out.println(con);
 
 		Map map = new HashMap<Integer, String>();
 		if (BasicStringUtil.isNullString(sql)) {

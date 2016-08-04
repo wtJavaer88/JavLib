@@ -14,7 +14,6 @@ import db.DBconnectionMgr;
 import db.DbExecMgr;
 import db.DbField;
 import db.DbFieldSqlUtil;
-import util.AliasUtil;
 
 public class DbSaveDao {
 	static Connection con = DBconnectionMgr.getConnection();
@@ -51,6 +50,67 @@ public class DbSaveDao {
 		util.addInsertField(new DbField("STARS", "" + getStarsContent(video.getStars()), "STRING"));
 		util.addInsertField(new DbField("TAGS", "" + getTagsContent(video.getTags()), "STRING"));
 		DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		saveVideoMakeDesc(video);
+	}
+
+	/**
+	 * 保存Maker,Label,Director到本地,他们可以放一个表里
+	 * <p>
+	 * 别名也要在这儿处理, 更新到jstar表
+	 * 
+	 * @param video
+	 * @throws Exception
+	 */
+	private static void saveVideoMakeDesc(JVideo video) throws Exception {
+		DbFieldSqlUtil util = null;
+		if (video.getMaker() != null) {
+			util = new DbFieldSqlUtil("JMAKEDESC", "");
+			util.addInsertField(
+					new DbField("ID", "" + StringEscapeUtils.escapeSql(video.getMaker().getId()), "STRING"));
+			util.addInsertField(
+					new DbField("NAME", "" + StringEscapeUtils.escapeSql(video.getMaker().getName()), "STRING"));
+			util.addInsertField(
+					new DbField("URL", "" + StringEscapeUtils.escapeSql(video.getMaker().getUrl()), "STRING"));
+			util.addInsertField(new DbField("TYPE", "0", "STRING"));
+			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		}
+		if (video.getLabel() != null) {
+			util = new DbFieldSqlUtil("JMAKEDESC", "");
+			util.addInsertField(
+					new DbField("ID", "" + StringEscapeUtils.escapeSql(video.getLabel().getId()), "STRING"));
+			util.addInsertField(
+					new DbField("NAME", "" + StringEscapeUtils.escapeSql(video.getLabel().getName()), "STRING"));
+			util.addInsertField(
+					new DbField("URL", "" + StringEscapeUtils.escapeSql(video.getLabel().getUrl()), "STRING"));
+			util.addInsertField(new DbField("TYPE", "1", "STRING"));
+			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		}
+		if (video.getDirector() != null) {
+			util = new DbFieldSqlUtil("JMAKEDESC", "");
+			util.addInsertField(
+					new DbField("ID", "" + StringEscapeUtils.escapeSql(video.getDirector().getId()), "STRING"));
+			util.addInsertField(
+					new DbField("NAME", "" + StringEscapeUtils.escapeSql(video.getDirector().getName()), "STRING"));
+			util.addInsertField(
+					new DbField("URL", "" + StringEscapeUtils.escapeSql(video.getDirector().getUrl()), "STRING"));
+			util.addInsertField(new DbField("TYPE", "2", "STRING"));
+			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		}
+
+		if (video.getStars() != null) {
+			for (JStar star : video.getStars()) {
+				if (star.getAlias() != null && star.getAlias().size() > 0) {
+					util = new DbFieldSqlUtil("JSTAR", "");
+					util.addUpdateField(new DbField("ALIAS",
+							"" + StringEscapeUtils.escapeSql(star.getAlias().toString()), "STRING"));
+					util.addUpdateField(
+							new DbField("NAME", "" + StringEscapeUtils.escapeSql(star.getName()), "STRING"));
+					util.addWhereField(new DbField("ID", "" + StringEscapeUtils.escapeSql(star.getId()), "STRING"));
+					DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+				}
+			}
+		}
+
 	}
 
 	private static String getStarAliasContent(List<String> alias) {
@@ -84,7 +144,7 @@ public class DbSaveDao {
 		List<String> starIds = new ArrayList<String>();
 		for (JStar star : stars) {
 			starIds.add(star.getId());
-			AliasUtil.writeAlias(star);
+			// AliasHelper.writeAlias(star);
 		}
 		return StringEscapeUtils.escapeSql(StringUtils.join(starIds, ","));
 	}
