@@ -42,8 +42,13 @@ public class VideoService {
 		Elements select = doc.select("#video_title");
 		if (select != null && select.first() != null) {
 			video.setName(select.first().text());
-			video.setUrl(select.first().select("a").first().attr("href"));
+			video.setUrl(select.first().select("a").first().absUrl("href"));
 		}
+		Elements picElement = doc.select("#video_jacket img");
+		if (picElement != null && picElement.first() != null) {
+			video.setImage(picElement.first().absUrl("src"));
+		}
+		//
 		// getTitleAndUrl(doc.select("#video_title"));
 		return video;
 	}
@@ -54,17 +59,17 @@ public class VideoService {
 		}
 		JLabel jlabel = new JLabel();
 		try {
-			jlabel.setId(JavStringUtil.getStarId(label.first().select("a").first().attr("href")));
+			jlabel.setId(JavStringUtil.getStarId(label.first().select("a").first().absUrl("href")));
 			jlabel.setName(label.first().text());
-			jlabel.setUrl(label.first().select("a").first().attr("href"));
+			jlabel.setUrl(label.first().select("a").first().absUrl("href"));
 		} catch (Exception e) {
 			throw new JavException(ErrorCode.FAIL, "获取label错误");
 		}
 		// System.out.println("labelId:" +
-		// JavStringUtil.getStarId(label.first().select("a").first().attr("href")));
+		// JavStringUtil.getStarId(label.first().select("a").first().absUrl("href")));
 		// System.out.println("labelName:" + label.first().text());
 		// System.out.println("labelUrl:" +
-		// label.first().select("a").first().attr("href"));
+		// label.first().select("a").first().absUrl("href"));
 		return jlabel;
 	}
 
@@ -74,18 +79,18 @@ public class VideoService {
 		}
 		JDirector jdirector = new JDirector();
 		try {
-			jdirector.setId(JavStringUtil.getStarId(director.first().select("a").first().attr("href")));
+			jdirector.setId(JavStringUtil.getStarId(director.first().select("a").first().absUrl("href")));
 			jdirector.setName(director.first().text());
-			jdirector.setUrl(director.first().select("a").first().attr("href"));
+			jdirector.setUrl(director.first().select("a").first().absUrl("href"));
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			throw new JavException(ErrorCode.FAIL, "获取director错误");
 		}
 		// System.out.println("directorId:" +
-		// JavStringUtil.getStarId(director.first().select("a").first().attr("href")));
+		// JavStringUtil.getStarId(director.first().select("a").first().absUrl("href")));
 		// System.out.println("directorName:" + director.first().text());
 		// System.out.println("directorUrl:" +
-		// director.first().select("a").first().attr("href"));
+		// director.first().select("a").first().absUrl("href"));
 		return jdirector;
 	}
 
@@ -128,17 +133,17 @@ public class VideoService {
 		}
 		JMaker jmaker = new JMaker();
 		try {
-			jmaker.setId(JavStringUtil.getStarId(maker.first().select("a").first().attr("href")));
+			jmaker.setId(JavStringUtil.getStarId(maker.first().select("a").first().absUrl("href")));
 			jmaker.setName(maker.first().text());
-			jmaker.setUrl(maker.first().select("a").first().attr("href"));
+			jmaker.setUrl(maker.first().select("a").first().absUrl("href"));
 		} catch (Exception e) {
 			throw new JavException(ErrorCode.FAIL, "获取Maker错误");
 		}
 		// System.out.println("makerId:" +
-		// JavStringUtil.getStarId(maker.first().select("a").first().attr("href")));
+		// JavStringUtil.getStarId(maker.first().select("a").first().absUrl("href")));
 		// System.out.println("makerName:" + maker.first().text());
 		// System.out.println("makerUrl:" +
-		// maker.first().select("a").first().attr("href"));
+		// maker.first().select("a").first().absUrl("href"));
 		return jmaker;
 	}
 
@@ -170,15 +175,15 @@ public class VideoService {
 			// System.out.println(tags);
 			for (Element element : tags) {
 				JTag tag = new JTag();
-				tag.setId(JavStringUtil.getStarId(element.select("a").first().attr("href")));
+				tag.setId(JavStringUtil.getStarId(element.select("a").first().absUrl("href")));
 				tag.setName(element.text());
-				tag.setUrl(element.select("a").first().attr("href"));
+				tag.setUrl(element.select("a").first().absUrl("href"));
 				tagList.add(tag);
 				// System.out.println("tagId:" +
-				// JavStringUtil.getStarId(element.select("a").first().attr("href")));
+				// JavStringUtil.getStarId(element.select("a").first().absUrl("href")));
 				// System.out.println("tagName:" + element.text());
 				// System.out.println("tagName:" +
-				// element.select("a").first().attr("href"));
+				// element.select("a").first().absUrl("href"));
 			}
 		} catch (Exception e) {
 			throw new JavException(ErrorCode.FAIL, "获取Tag错误");
@@ -197,14 +202,14 @@ public class VideoService {
 			for (int i = 0; i < spans.size(); i++) {
 				if (spans.get(i).attr("class").equals("star")) {
 					JStar star = new JStar();
-					star.setId(JavStringUtil.getStarId(spans.get(i).select("a").first().attr("href")));
+					star.setId(JavStringUtil.getStarId(spans.get(i).select("a").first().absUrl("href")));
 					star.setName(spans.get(i).text());
-					star.setUrl(spans.get(i).select("a").first().attr("href"));
+					star.setUrl(spans.get(i).select("a").first().absUrl("href"));
 					// System.out.println("starId:" +
-					// JavStringUtil.getStarId(spans.get(i).select("a").first().attr("href")));
+					// JavStringUtil.getStarId(spans.get(i).select("a").first().absUrl("href")));
 					// System.out.println("starName:" + spans.get(i).text());
 					// System.out.println("starUrl:" +
-					// spans.get(i).select("a").first().attr("href"));
+					// spans.get(i).select("a").first().absUrl("href"));
 					int j = i + 1;
 					List<String> alias = new ArrayList<String>();
 					while (j < spans.size() && spans.get(j).attr("class").equals("alias")) {

@@ -29,4 +29,9 @@ public class JMaker {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public String toString() {
+		return "JMaker [id=" + id + ", url=" + url + ", name=" + name + "]";
+	}
 }

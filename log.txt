@@ -1,0 +1,726 @@
+当前结果集大小0
+http://j8vlib.com/cn/star_list.php?prefix=Q结果集大小:0
+当前结果集大小91
+http://j8vlib.com/cn/star_list.php?prefix=B结果集大小:91
+当前结果集大小91
+http://j8vlib.com/cn/star_list.php?prefix=X结果集大小:0
+当前结果集大小122
+http://j8vlib.com/cn/star_list.php?prefix=V结果集大小:31
+当前结果集大小212
+当前结果集大小257
+http://j8vlib.com/cn/star_list.php?prefix=L结果集大小:45
+http://j8vlib.com/cn/star_list.php?prefix=D结果集大小:90
+当前结果集大小285
+http://j8vlib.com/cn/star_list.php?prefix=P结果集大小:28
+当前结果集大小301
+http://j8vlib.com/cn/star_list.php?prefix=Z结果集大小:16
+当前结果集大小424
+http://j8vlib.com/cn/star_list.php?prefix=G结果集大小:123
+当前结果集大小616
+http://j8vlib.com/cn/star_list.php?prefix=C结果集大小:192
+当前结果集大小808
+http://j8vlib.com/cn/star_list.php?prefix=J结果集大小:192
+当前结果集大小1099
+http://j8vlib.com/cn/star_list.php?prefix=R结果集大小:291
+当前结果集大小1422
+http://j8vlib.com/cn/star_list.php?prefix=E结果集大小:323
+当前结果集大小1765
+http://j8vlib.com/cn/star_list.php?prefix=W结果集大小:343
+当前结果集大小2364
+http://j8vlib.com/cn/star_list.php?prefix=U结果集大小:599
+当前结果集大小3432
+http://j8vlib.com/cn/star_list.php?prefix=F结果集大小:1068
+当前结果集大小5070
+http://j8vlib.com/cn/star_list.php?prefix=O结果集大小:1638
+当前结果集大小6799
+http://j8vlib.com/cn/star_list.php?prefix=I结果集大小:1729
+当前结果集大小9353
+http://j8vlib.com/cn/star_list.php?prefix=N结果集大小:2554
+当前结果集大小11516
+http://j8vlib.com/cn/star_list.php?prefix=Y结果集大小:2163
+当前结果集大小14320
+http://j8vlib.com/cn/star_list.php?prefix=T结果集大小:2804
+当前结果集大小17550
+http://j8vlib.com/cn/star_list.php?prefix=H结果集大小:3230
+当前结果集大小21244
+http://j8vlib.com/cn/star_list.php?prefix=A结果集大小:3694
+当前结果集大小26192
+http://j8vlib.com/cn/star_list.php?prefix=M结果集大小:4948
+当前结果集大小31551
+http://j8vlib.com/cn/star_list.php?prefix=S结果集大小:5359
+当前结果集大小37398
+http://j8vlib.com/cn/star_list.php?prefix=K结果集大小:5847
+ブリー・オルセン插入数据库失败:column id is not unique
+当前结果集大小0
+http://j8vlib.com/cn/star_list.php?prefix=Q结果集大小:0
+当前结果集大小45
+http://j8vlib.com/cn/star_list.php?prefix=L结果集大小:45
+当前结果集大小135
+http://j8vlib.com/cn/star_list.php?prefix=D结果集大小:90
+当前结果集大小166
+http://j8vlib.com/cn/star_list.php?prefix=V结果集大小:31
+当前结果集大小182
+http://j8vlib.com/cn/star_list.php?prefix=Z结果集大小:16
+当前结果集大小182
+http://j8vlib.com/cn/star_list.php?prefix=X结果集大小:0
+当前结果集大小273
+http://j8vlib.com/cn/star_list.php?prefix=B结果集大小:91
+当前结果集大小301
+http://j8vlib.com/cn/star_list.php?prefix=P结果集大小:28
+当前结果集大小424
+http://j8vlib.com/cn/star_list.php?prefix=G结果集大小:123
+当前结果集大小616
+http://j8vlib.com/cn/star_list.php?prefix=C结果集大小:192
+当前结果集大小808
+http://j8vlib.com/cn/star_list.php?prefix=J结果集大小:192
+当前结果集大小1099
+http://j8vlib.com/cn/star_list.php?prefix=R结果集大小:291
+当前结果集大小1442
+http://j8vlib.com/cn/star_list.php?prefix=W结果集大小:343
+当前结果集大小1765
+http://j8vlib.com/cn/star_list.php?prefix=E结果集大小:323
+当前结果集大小2364
+http://j8vlib.com/cn/star_list.php?prefix=U结果集大小:599
+当前结果集大小3432
+http://j8vlib.com/cn/star_list.php?prefix=F结果集大小:1068
+当前结果集大小5070
+http://j8vlib.com/cn/star_list.php?prefix=O结果集大小:1638
+当前结果集大小6799
+http://j8vlib.com/cn/star_list.php?prefix=I结果集大小:1729
+当前结果集大小8962
+http://j8vlib.com/cn/star_list.php?prefix=Y结果集大小:2163
+当前结果集大小11516
+http://j8vlib.com/cn/star_list.php?prefix=N结果集大小:2554
+当前结果集大小14320
+http://j8vlib.com/cn/star_list.php?prefix=T结果集大小:2804
+当前结果集大小17550
+http://j8vlib.com/cn/star_list.php?prefix=H结果集大小:3230
+当前结果集大小21244
+http://j8vlib.com/cn/star_list.php?prefix=A结果集大小:3694
+当前结果集大小26192
+http://j8vlib.com/cn/star_list.php?prefix=M结果集大小:4948
+当前结果集大小31551
+http://j8vlib.com/cn/star_list.php?prefix=S结果集大小:5359
+当前结果集大小37398
+http://j8vlib.com/cn/star_list.php?prefix=K结果集大小:5847
+相川咲插入数据库失败:database is locked
+愛川さら插入数据库失败:database is locked
+愛川沙羅插入数据库失败:database is locked
+愛川セイラ插入数据库失败:database is locked
+相川せな插入数据库失败:database is locked
+愛川瀬奈插入数据库失败:database is locked
+相川七海插入数据库失败:database is locked
+相川志穂插入数据库失败:database is locked
+愛川詩織插入数据库失败:database is locked
+藍川しおり插入数据库失败:database is locked
+当前结果集大小0
+http://j8vlib.com/cn/star_list.php?prefix=Q结果集大小:0
+当前结果集大小0
+http://j8vlib.com/cn/star_list.php?prefix=X结果集大小:0
+当前结果集大小90
+http://j8vlib.com/cn/star_list.php?prefix=D结果集大小:90
+当前结果集大小106
+http://j8vlib.com/cn/star_list.php?prefix=Z结果集大小:16
+当前结果集大小197
+当前结果集大小242
+http://j8vlib.com/cn/star_list.php?prefix=L结果集大小:45
+当前结果集大小270
+http://j8vlib.com/cn/star_list.php?prefix=P结果集大小:28
+当前结果集大小301
+http://j8vlib.com/cn/star_list.php?prefix=V结果集大小:31
+http://j8vlib.com/cn/star_list.php?prefix=B结果集大小:91
+当前结果集大小424
+http://j8vlib.com/cn/star_list.php?prefix=G结果集大小:123
+当前结果集大小616
+http://j8vlib.com/cn/star_list.php?prefix=J结果集大小:192
+当前结果集大小808
+http://j8vlib.com/cn/star_list.php?prefix=C结果集大小:192
+当前结果集大小1099
+http://j8vlib.com/cn/star_list.php?prefix=R结果集大小:291
+当前结果集大小1422
+http://j8vlib.com/cn/star_list.php?prefix=E结果集大小:323
+当前结果集大小1765
+http://j8vlib.com/cn/star_list.php?prefix=W结果集大小:343
+当前结果集大小2364
+http://j8vlib.com/cn/star_list.php?prefix=U结果集大小:599
+当前结果集大小3432
+http://j8vlib.com/cn/star_list.php?prefix=F结果集大小:1068
+当前结果集大小5070
+http://j8vlib.com/cn/star_list.php?prefix=O结果集大小:1638
+当前结果集大小6799
+http://j8vlib.com/cn/star_list.php?prefix=I结果集大小:1729
+当前结果集大小8962
+http://j8vlib.com/cn/star_list.php?prefix=Y结果集大小:2163
+当前结果集大小11516
+http://j8vlib.com/cn/star_list.php?prefix=N结果集大小:2554
+当前结果集大小14746
+http://j8vlib.com/cn/star_list.php?prefix=H结果集大小:3230
+当前结果集大小17550
+http://j8vlib.com/cn/star_list.php?prefix=T结果集大小:2804
+当前结果集大小21244
+http://j8vlib.com/cn/star_list.php?prefix=A结果集大小:3694
+当前结果集大小26192
+http://j8vlib.com/cn/star_list.php?prefix=M结果集大小:4948
+当前结果集大小31551
+http://j8vlib.com/cn/star_list.php?prefix=S结果集大小:5359
+当前结果集大小37398
+http://j8vlib.com/cn/star_list.php?prefix=K结果集大小:5847
+MALIA插入数据库失败:column id is not unique
+まりか插入数据库失败:column id is not unique
+真咲奈々插入数据库失败:column id is not unique
+松井恵梨插入数据库失败:column id is not unique
+松本佳代子插入数据库失败:column id is not unique
+美室なお插入数据库失败:column id is not unique
+南芽衣奈插入数据库失败:column id is not unique
+南菜菜插入数据库失败:column id is not unique
+MISAKI插入数据库失败:column id is not unique
+三崎明日香插入数据库失败:column id is not unique
+美咲レイ插入数据库失败:column id is not unique
+三浦芽依插入数据库失败:column id is not unique
+みずなれい插入数据库失败:column id is not unique
+水野奈菜插入数据库失败:column id is not unique
+水玉レモン插入数据库失败:column id is not unique
+望月加奈插入数据库失败:column id is not unique
+楓ありす插入数据库失败:column id is not unique
+桃宮もか插入数据库失败:column id is not unique
+森未向插入数据库失败:column id is not unique
+森山杏菜插入数据库失败:column id is not unique
+諸星セイラ插入数据库失败:column id is not unique
+酒井ちなみ插入数据库失败:column id is not unique
+酒井楓插入数据库失败:column id is not unique
+坂木美春插入数据库失败:column id is not unique
+桜田さくら插入数据库失败:column id is not unique
+桜木愛插入数据库失败:column id is not unique
+桜咲ひな插入数据库失败:column id is not unique
+沙織插入数据库失败:column id is not unique
+佐藤美紀插入数据库失败:column id is not unique
+さとう樹菜子插入数据库失败:column id is not unique
+佐藤みく插入数据库失败:column id is not unique
+沢尻マリナ插入数据库失败:column id is not unique
+沢村麗華插入数据库失败:column id is not unique
+浅岡沙希插入数据库失败:column id is not unique
+島崎梨乃插入数据库失败:column id is not unique
+しのざきさとみ插入数据库失败:column id is not unique
+白鳥美香插入数据库失败:column id is not unique
+紫月いろは插入数据库失败:column id is not unique
+しみず霧子插入数据库失败:column id is not unique
+園崎美弥插入数据库失败:column id is not unique
+すぎはら美里插入数据库失败:column id is not unique
+須真杏里插入数据库失败:column id is not unique
+澄川凌子插入数据库失败:column id is not unique
+砂井春希插入数据库失败:column id is not unique
+鈴木きあら插入数据库失败:column id is not unique
+鈴木心陽插入数据库失败:column id is not unique
+鈴木志帆插入数据库失败:column id is not unique
+かなで自由插入数据库失败:column id is not unique
+かじか凛插入数据库失败:column id is not unique
+神谷梨々插入数据库失败:column id is not unique
+神納花插入数据库失败:column id is not unique
+笠木彩花插入数据库失败:column id is not unique
+柏木愛插入数据库失败:column id is not unique
+柏木みあ插入数据库失败:column id is not unique
+かなた美緒插入数据库失败:column id is not unique
+川上优插入数据库失败:column id is not unique
+川村千里插入数据库失败:column id is not unique
+川村みなみ插入数据库失败:column id is not unique
+川瀬優希插入数据库失败:column id is not unique
+風間今日子插入数据库失败:column id is not unique
+結希玲衣插入数据库失败:column id is not unique
+君島美香插入数据库失败:column id is not unique
+木村成美插入数据库失败:column id is not unique
+希崎圭蓮插入数据库失败:column id is not unique
+北川エリカ插入数据库失败:column id is not unique
+小林芽衣插入数据库失败:column id is not unique
+小泉キラリ插入数据库失败:column id is not unique
+COCONA插入数据库失败:column id is not unique
+小森美悠插入数据库失败:column id is not unique
+小向杏奈插入数据库失败:column id is not unique
+近藤かおり插入数据库失败:column id is not unique
+仓持茜插入数据库失败:column id is not unique
+倉持結愛插入数据库失败:column id is not unique
+葉月ありさ插入数据库失败:column id is not unique
+栗原加那插入数据库失败:column id is not unique
+黒崎ヒトミ插入数据库失败:column id is not unique
+黒崎セシル插入数据库失败:column id is not unique
+黒沢英里奈插入数据库失败:column id is not unique
+くるみ插入数据库失败:column id is not unique
+くるみもも插入数据库失败:column id is not unique
+草凪純插入数据库失败:column id is not unique
+京乃あづさ插入数据库失败:column id is not unique
+线程:pool-1-thread-5 Star:a42a6开始!
+线程:pool-1-thread-15 Star:a42as开始!
+线程:pool-1-thread-14 Star:a42aq开始!
+线程:pool-1-thread-11 Star:a42ak开始!
+线程:pool-1-thread-12 Star:a42am开始!
+线程:pool-1-thread-10 Star:a42ai开始!
+线程:pool-1-thread-6 Star:a42aa开始!
+线程:pool-1-thread-19 Star:a42b2开始!
+线程:pool-1-thread-20 Star:a42b4开始!
+线程:pool-1-thread-7 Star:a42ac开始!
+线程:pool-1-thread-17 Star:a42aw开始!
+线程:pool-1-thread-1 Star:a4开始!
+线程:pool-1-thread-8 Star:a42ae开始!
+线程:pool-1-thread-2 Star:a42a开始!
+线程:pool-1-thread-3 Star:a42a2开始!
+线程:pool-1-thread-4 Star:a42a4开始!
+线程:pool-1-thread-16 Star:a42au开始!
+线程:pool-1-thread-13 Star:a42ao开始!
+线程:pool-1-thread-18 Star:a42ay开始!
+线程:pool-1-thread-9 Star:a42ag开始!
+川村美和 videos数:0
+线程:pool-1-thread-6 Star:a42aa保存完毕!
+线程:pool-1-thread-6 Star:a42b6开始!
+内山美菜 videos数:0
+线程:pool-1-thread-8 Star:a42ae保存完毕!
+线程:pool-1-thread-8 Star:a42ba开始!
+鏑木まや videos数:0
+线程:pool-1-thread-9 Star:a42ag保存完毕!
+线程:pool-1-thread-9 Star:a42bc开始!
+葛城紫音 videos数:0
+线程:pool-1-thread-8 Star:a42ba保存完毕!
+线程:pool-1-thread-8 Star:a42be开始!
+由姫あゆ videos数:1
+香澄千華 videos数:1
+JBD-146插入数据库失败:column id is not unique
+线程:pool-1-thread-2 Star:a42a保存完毕!
+线程:pool-1-thread-2 Star:a42bg开始!
+水原佳純 videos数:1
+桃尻優香 videos数:1
+水島玲子 videos数:1
+藤井美千代 videos数:1
+水沢まや videos数:1
+线程:pool-1-thread-17 Star:a42aw保存完毕!
+线程:pool-1-thread-17 Star:a42bi开始!
+线程:pool-1-thread-20 Star:a42b4保存完毕!
+线程:pool-1-thread-20 Star:a42bk开始!
+一条紗也 videos数:1
+黒沢あずさ videos数:0
+线程:pool-1-thread-7 Star:a42ac保存完毕!
+线程:pool-1-thread-7 Star:a42bm开始!
+线程:pool-1-thread-18 Star:a42ay保存完毕!
+线程:pool-1-thread-18 Star:a42bo开始!
+JRZD-154插入数据库失败:column id is not unique
+线程:pool-1-thread-4 Star:a42a4保存完毕!
+线程:pool-1-thread-4 Star:a42bs开始!
+水木このみ videos数:0
+线程:pool-1-thread-8 Star:a42be保存完毕!
+线程:pool-1-thread-8 Star:a42bu开始!
+佐伯菜摘 videos数:1
+线程:pool-1-thread-15 Star:a42as保存完毕!
+线程:pool-1-thread-15 Star:a42bw开始!
+松下由美 videos数:2
+线程:pool-1-thread-12 Star:a42am保存完毕!
+线程:pool-1-thread-12 Star:a42by开始!
+柏みのり videos数:2
+高瀬美空 videos数:2
+线程:pool-1-thread-9 Star:a42bc保存完毕!
+线程:pool-1-thread-9 Star:a42c2开始!
+线程:pool-1-thread-16 Star:a42au保存完毕!
+线程:pool-1-thread-16 Star:a42c4开始!
+春瀬まき videos数:0
+线程:pool-1-thread-15 Star:a42bw保存完毕!
+线程:pool-1-thread-15 Star:a42c6开始!
+佳山愛美 videos数:0
+线程:pool-1-thread-7 Star:a42bm保存完毕!
+线程:pool-1-thread-7 Star:a42ca开始!
+MARD-257插入数据库失败:column id is not unique
+线程:pool-1-thread-11 Star:a42ak保存完毕!
+线程:pool-1-thread-11 Star:a42cc开始!
+HTHD-45插入数据库失败:column id is not unique
+线程:pool-1-thread-5 Star:a42a6保存完毕!
+线程:pool-1-thread-5 Star:a42ce开始!
+楠田理江子 videos数:1
+大谷ゆかり videos数:0
+线程:pool-1-thread-9 Star:a42c2保存完毕!
+线程:pool-1-thread-9 Star:a42cg开始!
+姫野えみ videos数:2
+线程:pool-1-thread-14 Star:a42aq保存完毕!
+线程:pool-1-thread-14 Star:a42ci开始!
+真白るる videos数:0
+线程:pool-1-thread-16 Star:a42c4保存完毕!
+线程:pool-1-thread-16 Star:a42ck开始!
+线程:pool-1-thread-17 Star:a42bi保存完毕!
+线程:pool-1-thread-17 Star:a42cm开始!
+成瀬京子 videos数:1
+线程:pool-1-thread-19 Star:a42b2保存完毕!
+线程:pool-1-thread-19 Star:a42co开始!
+瀬戸友里恵 videos数:0
+线程:pool-1-thread-5 Star:a42ce保存完毕!
+线程:pool-1-thread-5 Star:a42cq开始!
+小沢さつき videos数:2
+小谷世梨子 videos数:1
+线程:pool-1-thread-8 Star:a42bu保存完毕!
+线程:pool-1-thread-8 Star:a42cs开始!
+片桐詩織 videos数:0
+线程:pool-1-thread-14 Star:a42ci保存完毕!
+线程:pool-1-thread-14 Star:a42cu开始!
+川島りこ videos数:0
+线程:pool-1-thread-16 Star:a42ck保存完毕!
+线程:pool-1-thread-16 Star:a42cw开始!
+线程:pool-1-thread-12 Star:a42by保存完毕!
+FFFD-04插入数据库失败:column id is not unique
+线程:pool-1-thread-12 Star:a42cy开始!
+JRZD-153插入数据库失败:column id is not unique
+线程:pool-1-thread-3 Star:a42a2保存完毕!
+线程:pool-1-thread-3 Star:a42d2开始!
+川上琴音 videos数:0
+线程:pool-1-thread-17 Star:a42cm保存完毕!
+线程:pool-1-thread-17 Star:a42d4开始!
+星田今日子 videos数:2
+线程:pool-1-thread-2 Star:a42bg保存完毕!
+线程:pool-1-thread-2 Star:a42d6开始!
+桜井はる videos数:1
+水沼祥子 videos数:0
+线程:pool-1-thread-14 Star:a42cu保存完毕!
+线程:pool-1-thread-14 Star:a42da开始!
+线程:pool-1-thread-15 Star:a42c6保存完毕!
+线程:pool-1-thread-15 Star:a42dc开始!
+里中杏澄 videos数:0
+线程:pool-1-thread-4 Star:a42bs保存完毕!
+线程:pool-1-thread-4 Star:a42de开始!
+中川あやの videos数:0
+线程:pool-1-thread-16 Star:a42cw保存完毕!
+线程:pool-1-thread-16 Star:a42dg开始!
+中村遙香 videos数:1
+线程:pool-1-thread-7 Star:a42ca保存完毕!
+线程:pool-1-thread-7 Star:a42di开始!
+伏見さおり videos数:3
+小泉ゆかこ videos数:0
+线程:pool-1-thread-3 Star:a42d2保存完毕!
+线程:pool-1-thread-3 Star:a42dk开始!
+佐波千晴 videos数:1
+川村沙織 videos数:4
+沢村千夏 videos数:0
+线程:pool-1-thread-4 Star:a42de保存完毕!
+线程:pool-1-thread-4 Star:a42dm开始!
+线程:pool-1-thread-18 Star:a42bo保存完毕!
+线程:pool-1-thread-18 Star:a42do开始!
+山口のぞみ videos数:0
+线程:pool-1-thread-5 Star:a42cq保存完毕!
+线程:pool-1-thread-5 Star:a42dq开始!
+篠原美奈 videos数:1
+小山瑠璃 videos数:0
+线程:pool-1-thread-7 Star:a42di保存完毕!
+线程:pool-1-thread-7 Star:a42ds开始!
+星村智花 videos数:1
+线程:pool-1-thread-20 Star:a42bk保存完毕!
+线程:pool-1-thread-20 Star:a42du开始!
+吉永郁美 videos数:0
+线程:pool-1-thread-9 Star:a42cg保存完毕!
+线程:pool-1-thread-9 Star:a42dw开始!
+线程:pool-1-thread-12 Star:a42cy保存完毕!
+线程:pool-1-thread-12 Star:a42dy开始!
+线程:pool-1-thread-19 Star:a42co保存完毕!
+线程:pool-1-thread-19 Star:a42e2开始!
+牧村みお videos数:0
+线程:pool-1-thread-18 Star:a42do保存完毕!
+线程:pool-1-thread-18 Star:a42e4开始!
+朝倉奈々子 videos数:0
+线程:pool-1-thread-4 Star:a42dm保存完毕!
+线程:pool-1-thread-4 Star:a42e6开始!
+柚木せあら videos数:0
+线程:pool-1-thread-17 Star:a42d4保存完毕!
+线程:pool-1-thread-17 Star:a42ea开始!
+赤木梨香 videos数:1
+山崎りな videos数:0
+线程:pool-1-thread-7 Star:a42ds保存完毕!
+线程:pool-1-thread-7 Star:a42ec开始!
+夏樹響子 videos数:1
+名取美和子 videos数:0
+线程:pool-1-thread-20 Star:a42du保存完毕!
+线程:pool-1-thread-20 Star:a42ee开始!
+吉田あいり videos数:2
+ふきの由美 videos数:3
+线程:pool-1-thread-15 Star:a42dc保存完毕!
+高倉麻利子 videos数:0
+线程:pool-1-thread-9 Star:a42dw保存完毕!
+线程:pool-1-thread-9 Star:a42ei开始!
+线程:pool-1-thread-15 Star:a42eg开始!
+長澤まり videos数:4
+线程:pool-1-thread-1 Star:a4开始!
+水嶋りこ videos数:7
+DKSW-218插入数据库失败:column id is not unique
+TRK-02插入数据库失败:column id is not unique
+TDLN-101插入数据库失败:column id is not unique
+HEDV-100插入数据库失败:column id is not unique
+OKAD-253f插入数据库失败:column id is not unique
+ARMD-957插入数据库失败:column id is not unique
+BUR-265插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a4保存完毕!
+线程:pool-1-thread-1 Star:a42a开始!
+由姫あゆ videos数:1
+JBD-146插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42a保存完毕!
+线程:pool-1-thread-1 Star:a42a2开始!
+小沢さつき videos数:2
+FFFD-04插入数据库失败:column id is not unique
+JRZD-153插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42a2保存完毕!
+线程:pool-1-thread-1 Star:a42a4开始!
+水島玲子 videos数:1
+JRZD-154插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42a4保存完毕!
+线程:pool-1-thread-1 Star:a42a6开始!
+柏みのり videos数:2
+MARD-257插入数据库失败:column id is not unique
+HTHD-45插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42a6保存完毕!
+线程:pool-1-thread-1 Star:a42aa开始!
+川村美和 videos数:0
+线程:pool-1-thread-1 Star:a42aa保存完毕!
+线程:pool-1-thread-1 Star:a42ac开始!
+黒沢あずさ videos数:0
+线程:pool-1-thread-1 Star:a42ac保存完毕!
+线程:pool-1-thread-1 Star:a42ae开始!
+内山美菜 videos数:0
+线程:pool-1-thread-1 Star:a42ae保存完毕!
+线程:pool-1-thread-1 Star:a42ag开始!
+鏑木まや videos数:0
+线程:pool-1-thread-1 Star:a42ag保存完毕!
+线程:pool-1-thread-1 Star:a42ai开始!
+黒田エリ videos数:0
+线程:pool-1-thread-1 Star:a42ai保存完毕!
+线程:pool-1-thread-1 Star:a42ak开始!
+松下由美 videos数:2
+HONE-26插入数据库失败:column id is not unique
+SOUL-17插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42ak保存完毕!
+线程:pool-1-thread-1 Star:a42am开始!
+水原佳純 videos数:1
+KOP-45插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42am保存完毕!
+线程:pool-1-thread-1 Star:a42ao开始!
+長澤まり videos数:4
+线程:pool-1-thread-1 Star:a42ao保存完毕!
+线程:pool-1-thread-1 Star:a42aq开始!
+高瀬美空 videos数:2
+SIKA-11插入数据库失败:column id is not unique
+JRZD-112插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42aq保存完毕!
+线程:pool-1-thread-1 Star:a42as开始!
+桃尻優香 videos数:1
+HONE-36插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42as保存完毕!
+线程:pool-1-thread-1 Star:a42au开始!
+一条紗也 videos数:1
+HONE-33插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42au保存完毕!
+线程:pool-1-thread-1 Star:a42aw开始!
+香澄千華 videos数:1
+HONE-23插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42aw保存完毕!
+线程:pool-1-thread-1 Star:a42ay开始!
+藤井美千代 videos数:1
+HONE-18插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42ay保存完毕!
+线程:pool-1-thread-1 Star:a42b2开始!
+姫野えみ videos数:2
+NSPS-443插入数据库失败:column id is not unique
+NSPS-062插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42b2保存完毕!
+线程:pool-1-thread-1 Star:a42b4开始!
+水沢まや videos数:1
+NSPS-060插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42b4保存完毕!
+线程:pool-1-thread-1 Star:a42b6开始!
+川村沙織 videos数:4
+NSPS-257插入数据库失败:column id is not unique
+NSCS-002插入数据库失败:column id is not unique
+NSPS-047插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42b6保存完毕!
+线程:pool-1-thread-1 Star:a42ba开始!
+葛城紫音 videos数:0
+线程:pool-1-thread-1 Star:a42ba保存完毕!
+线程:pool-1-thread-1 Star:a42bc开始!
+佐伯菜摘 videos数:1
+UURU-29插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42bc保存完毕!
+线程:pool-1-thread-1 Star:a42be开始!
+水木このみ videos数:0
+线程:pool-1-thread-1 Star:a42be保存完毕!
+线程:pool-1-thread-1 Star:a42bg开始!
+星田今日子 videos数:2
+CVDX-105插入数据库失败:column id is not unique
+JRZD-216插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42bg保存完毕!
+线程:pool-1-thread-1 Star:a42bi开始!
+楠田理江子 videos数:1
+UURU-21插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42bi保存完毕!
+线程:pool-1-thread-1 Star:a42bk开始!
+伏見さおり videos数:3
+NADE-684插入数据库失败:column id is not unique
+SIKA-25插入数据库失败:column id is not unique
+JRZD-145插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42bk保存完毕!
+线程:pool-1-thread-1 Star:a42bm开始!
+佳山愛美 videos数:0
+线程:pool-1-thread-1 Star:a42bm保存完毕!
+线程:pool-1-thread-1 Star:a42bo开始!
+佐波千晴 videos数:1
+JRZD-118插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42bo保存完毕!
+线程:pool-1-thread-1 Star:a42bs开始!
+里中杏澄 videos数:0
+线程:pool-1-thread-1 Star:a42bs保存完毕!
+线程:pool-1-thread-1 Star:a42bu开始!
+成瀬京子 videos数:1
+VNDS-2845插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42bu保存完毕!
+线程:pool-1-thread-1 Star:a42bw开始!
+春瀬まき videos数:0
+线程:pool-1-thread-1 Star:a42bw保存完毕!
+线程:pool-1-thread-1 Star:a42by开始!
+小谷世梨子 videos数:1
+JCKL-104插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42by保存完毕!
+线程:pool-1-thread-1 Star:a42c2开始!
+大谷ゆかり videos数:0
+线程:pool-1-thread-1 Star:a42c2保存完毕!
+线程:pool-1-thread-1 Star:a42c4开始!
+真白るる videos数:0
+线程:pool-1-thread-1 Star:a42c4保存完毕!
+线程:pool-1-thread-1 Star:a42c6开始!
+桜井はる videos数:1
+DANDY-087插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42c6保存完毕!
+线程:pool-1-thread-1 Star:a42ca开始!
+中村遙香 videos数:1
+ATOM-247插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42ca保存完毕!
+线程:pool-1-thread-1 Star:a42cc开始!
+ふきの由美 videos数:3
+R18-169插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42cc保存完毕!
+线程:pool-1-thread-1 Star:a42ce开始!
+瀬戸友里恵 videos数:0
+线程:pool-1-thread-1 Star:a42ce保存完毕!
+线程:pool-1-thread-1 Star:a42cg开始!
+吉永郁美 videos数:0
+线程:pool-1-thread-1 Star:a42cg保存完毕!
+线程:pool-1-thread-1 Star:a42ci开始!
+片桐詩織 videos数:0
+线程:pool-1-thread-1 Star:a42ci保存完毕!
+线程:pool-1-thread-1 Star:a42ck开始!
+川島りこ videos数:0
+线程:pool-1-thread-1 Star:a42ck保存完毕!
+线程:pool-1-thread-1 Star:a42cm开始!
+川上琴音 videos数:0
+线程:pool-1-thread-1 Star:a42cm保存完毕!
+线程:pool-1-thread-1 Star:a42co开始!
+篠原美奈 videos数:1
+DOKS-156插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42co保存完毕!
+线程:pool-1-thread-1 Star:a42cq开始!
+山口のぞみ videos数:0
+线程:pool-1-thread-1 Star:a42cq保存完毕!
+线程:pool-1-thread-1 Star:a42cs开始!
+吉田あいり videos数:2
+线程:pool-1-thread-1 Star:a42cs保存完毕!
+线程:pool-1-thread-1 Star:a42cu开始!
+水沼祥子 videos数:0
+线程:pool-1-thread-1 Star:a42cu保存完毕!
+线程:pool-1-thread-1 Star:a42cw开始!
+中川あやの videos数:0
+线程:pool-1-thread-1 Star:a42cw保存完毕!
+线程:pool-1-thread-1 Star:a42cy开始!
+星村智花 videos数:1
+RGBH-025插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:a42cy保存完毕!
+线程:pool-1-thread-1 Star:a42d2开始!
+小泉ゆかこ videos数:0
+线程:pool-1-thread-1 Star:a42d2保存完毕!
+线程:pool-1-thread-1 Star:a42d4开始!
+柚木せあら videos数:0
+线程:pool-1-thread-1 Star:a42d4保存完毕!
+线程:pool-1-thread-1 Star:a42d6开始!
+线程:pool-1-thread-1 Star:ayaq开始!
+线程:pool-1-thread-1 Star:ayaq开始!
+线程:pool-1-thread-1 Star:ayaq开始!
+園田ユリア videos数:470
+FMR-039插入数据库失败:column id is not unique
+SCD-146插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:ayaq保存完毕!
+线程:pool-1-thread-1 Star:pu3q开始!
+須真杏理 videos数:70
+GAR-184插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:pu3q保存完毕!
+线程:pool-1-thread-1 Star:iufa开始!
+线程:pool-1-thread-1 Star:iufa开始!
+线程:pool-1-thread-2 Star:pu3q开始!
+线程:pool-1-thread-1 Star:iufa开始!
+线程:pool-1-thread-2 Star:pu3q开始!
+名波ゆら videos数:35
+SSPD-067插入数据库失败:column id is not unique
+线程:pool-1-thread-1 Star:iufa保存完毕!
+須真杏理 videos数:69
+MVBD-144插入数据库失败:column id is not unique
+HSRM-019插入数据库失败:column id is not unique
+DFDA-068插入数据库失败:column id is not unique
+TMSB-017插入数据库失败:column id is not unique
+KIBD-107插入数据库失败:column id is not unique
+AGEMIX-113插入数据库失败:column id is not unique
+AGEMIX-099插入数据库失败:column id is not unique
+FLAV-094插入数据库失败:column id is not unique
+KIBD-089插入数据库失败:column id is not unique
+FLAV-090插入数据库失败:column id is not unique
+KISD-050插入数据库失败:column id is not unique
+FLAV-087插入数据库失败:column id is not unique
+KIBD-087插入数据库失败:column id is not unique
+AGEMIX-083插入数据库失败:column id is not unique
+TMAM-013插入数据库失败:column id is not unique
+LPT-010插入数据库失败:column id is not unique
+KISD-047插入数据库失败:column id is not unique
+KIBD-083插入数据库失败:column id is not unique
+AGEMIX-079插入数据库失败:column id is not unique
+TEN-18插入数据库失败:column id is not unique
+GAR-222插入数据库失败:column id is not unique
+HND-010插入数据库失败:column id is not unique
+DASD-141插入数据库失败:column id is not unique
+BLK-033插入数据库失败:column id is not unique
+DDB-158插入数据库失败:column id is not unique
+SW-010插入数据库失败:column id is not unique
+FLAV-075插入数据库失败:column id is not unique
+MVBD-047插入数据库失败:column id is not unique
+KISD-044插入数据库失败:column id is not unique
+HNDS-001插入数据库失败:column id is not unique
+DXDB-003插入数据库失败:column id is not unique
+GAR-184插入数据库失败:column id is not unique
+GPTM-05插入数据库失败:column id is not unique
+GXXD-62插入数据库失败:column id is not unique
+DXNJ-002插入数据库失败:column id is not unique
+ARM-029插入数据库失败:column id is not unique
+DFTA-45插入数据库失败:column id is not unique
+MIAD-451插入数据库失败:column id is not unique
+GMMD-06插入数据库失败:column id is not unique
+SDMT-081插入数据库失败:column id is not unique
+TZZ-37插入数据库失败:column id is not unique
+YJK-009插入数据库失败:column id is not unique
+PHYD-02插入数据库失败:column id is not unique
+MIRD-072插入数据库失败:column id is not unique
+CCC-207插入数据库失败:column id is not unique
+PGHD-01插入数据库失败:column id is not unique
+ATHB-31插入数据库失败:column id is not unique
+MVBD-040插入数据库失败:column id is not unique
+HEDV-108插入数据库失败:column id is not unique
+VSPDS-452插入数据库失败:column id is not unique
+GEN-014插入数据库失败:column id is not unique
+GATE-03插入数据库失败:column id is not unique
+GAR-124插入数据库失败:column id is not unique
+GAR-119插入数据库失败:column id is not unique
+NFDM-130插入数据库失败:column id is not unique
+MVBD-036插入数据库失败:column id is not unique
+NFDM-121插入数据库失败:column id is not unique
+NFDM-120插入数据库失败:column id is not unique
+NFDM-119插入数据库失败:column id is not unique
+GXXD-29插入数据库失败:column id is not unique
+TYOD-049插入数据库失败:column id is not unique
+MVBD-035插入数据库失败:column id is not unique
+MVSD-086插入数据库失败:column id is not unique
+VSPDS-416插入数据库失败:column id is not unique
+TSWN-002插入数据库失败:column id is not unique
+TYOD-023插入数据库失败:column id is not unique
+HBAD-070插入数据库失败:column id is not unique
+EVO-049插入数据库失败:column id is not unique
+NWF-134插入数据库失败:column id is not unique
+线程:pool-1-thread-2 Star:pu3q保存完毕!

@@ -29,4 +29,9 @@ public class JLabel {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public String toString() {
+		return "JLabel [id=" + id + ", url=" + url + ", name=" + name + "]";
+	}
 }

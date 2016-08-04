@@ -12,6 +12,7 @@ public class JVideo {
 	private String url;
 	private double score;
 	private int length;
+	private String image;
 	private List<JComment> comments;
 	private List<JStar> stars;
 	private JMaker maker;
@@ -119,6 +120,14 @@ public class JVideo {
 		return "JVideo [id=" + id + ", name=" + name + ", date=" + date + ", tags=" + tags + ", url=" + url + ", score="
 				+ score + ", length=" + length + ", comments=" + comments + ", stars=" + stars + ", maker=" + maker
 				+ ", label=" + label + ", director=" + director + "]";
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 }

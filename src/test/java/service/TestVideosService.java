@@ -1,11 +1,8 @@
-package bean;
+package service;
 
 import java.io.IOException;
 
 import org.junit.Test;
-
-import service.JVideosService;
-import service.VideoService;
 
 public class TestVideosService {
 	@Test

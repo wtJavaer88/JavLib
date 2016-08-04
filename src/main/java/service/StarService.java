@@ -12,7 +12,7 @@ import util.JavStringUtil;
 
 public class StarService {
 	/**
-	 * 从一个star页面中获取所有star
+	 * 从一个star页面中获取所有star(一般100条/页)
 	 * 
 	 * @param doc
 	 * @return
@@ -26,9 +26,9 @@ public class StarService {
 			// System.out.println(element.text());
 			if (element.select("a").first() != null) {
 				JStar star = new JStar();
-				star.setId(JavStringUtil.getStarId(element.select("a").first().attr("href")));
+				star.setId(JavStringUtil.getStarId(element.select("a").first().absUrl("href")));
 				star.setName(element.text());
-				star.setUrl(element.select("a").first().attr("href"));
+				star.setUrl(element.select("a").first().absUrl("href"));
 				stars.add(star);
 			}
 		}
