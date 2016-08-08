@@ -118,8 +118,8 @@ public class JVideo {
 	@Override
 	public String toString() {
 		return "JVideo [id=" + id + ", name=" + name + ", date=" + date + ", tags=" + tags + ", url=" + url + ", score="
-				+ score + ", length=" + length + ", comments=" + comments + ", stars=" + stars + ", maker=" + maker
-				+ ", label=" + label + ", director=" + director + "]";
+				+ score + ", length=" + length + ", image=" + image + ", comments=" + comments + ", stars=" + stars
+				+ ", maker=" + maker + ", label=" + label + ", director=" + director + "]";
 	}
 
 	public String getImage() {

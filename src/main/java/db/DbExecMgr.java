@@ -54,10 +54,11 @@ public class DbExecMgr {
 		try {
 			statement = con.createStatement();
 			ResultSet set = statement.executeQuery(sql);
-			int i = 1;
+			ResultSetMetaData resultSetMetaData = set.getMetaData();
 			while (set.next()) {
-				map.put(i, set.getString(1));
-				i++;
+				for (int i3 = 1; i3 < resultSetMetaData.getColumnCount() + 1; ++i3) {
+					map.put(resultSetMetaData.getColumnName(i3).toUpperCase(), set.getString(i3));
+				}
 			}
 		} catch (SQLException e1) {
 			System.out.println(e1.getMessage());

@@ -50,11 +50,13 @@ public class DbSaveDao {
 		util.addInsertField(new DbField("STARS", "" + getStarsContent(video.getStars()), "STRING"));
 		util.addInsertField(new DbField("TAGS", "" + getTagsContent(video.getTags()), "STRING"));
 		DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
-		saveVideoMakeDesc(video);
+		// saveVideoMakeDesc(video);
 	}
 
 	/**
 	 * 保存Maker,Label,Director到本地,他们可以放一个表里
+	 * <p>
+	 * 一次完成后 暂时不维护
 	 * <p>
 	 * 别名也要在这儿处理, 更新到jstar表
 	 * 
