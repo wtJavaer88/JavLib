@@ -44,8 +44,8 @@ public class UrlPicDownloader
             URL url = new URL(urlString);
             // 打开连接
             URLConnection con = url.openConnection();
-            con.setConnectTimeout(20000);
-            con.setReadTimeout(60000);
+            con.setConnectTimeout(60000);
+            con.setReadTimeout(100000);
 
             // 输入流
             is = con.getInputStream();

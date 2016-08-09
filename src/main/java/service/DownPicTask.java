@@ -20,8 +20,23 @@ public class DownPicTask implements Runnable
         this.imgsrc = imgsrc;
     }
 
+    static long time = System.currentTimeMillis();
+    static String threadName = "";
+
+    public long getRunningTime()
+    {
+        return System.currentTimeMillis() - time;
+    }
+
+    public String getCurrThreadName()
+    {
+        return threadName;
+    }
+
     public void run()
     {
+        time = System.currentTimeMillis();
+        threadName = Thread.currentThread().getName();
         // 进来首先删除旧文件
         BasicFileUtil.deleteFile(saveFilePath);
         Logger.logGlobal(Thread.currentThread().getName() + "开始下载:" + imgsrc);
@@ -40,8 +55,7 @@ public class DownPicTask implements Runnable
 
         if(BasicFileUtil.getFileSize(saveFilePath) == length)
         {
-            Logger.logGlobal(Thread.currentThread().getName() + "下载成功:"
-                    + imgsrc);
+            Logger.logGlobal(threadName + "下载成功:" + imgsrc);
         }
         else
         {
@@ -51,8 +65,8 @@ public class DownPicTask implements Runnable
             {
                 errMsg = "删除失败";
             }
-            Logger.logGlobal(Thread.currentThread().getName() + "下载未完成:"
-                    + imgsrc + " errMsg:" + errMsg);
+            Logger.logGlobal(threadName + "下载未完成:" + imgsrc + " errMsg:"
+                    + errMsg);
         }
     }
 }
