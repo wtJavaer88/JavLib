@@ -25,7 +25,7 @@ public class DownPics
     public void download()
     {
         Map map = DbExecMgr
-                .getSelectAllSqlMap("SELECT ID,IMAGE,NAME from JVIDEO ORDER BY ID ASC limit 10000 offset 40000");
+                .getSelectAllSqlMap("SELECT ID,IMAGE,NAME from JVIDEO ORDER BY ID ASC limit 20000 offset 80000");
         int size = map.size();
         Map rowMap;
         System.out.println(size);
