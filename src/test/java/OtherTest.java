@@ -51,7 +51,7 @@ public class OtherTest {
 	}
 
 	private void checkErrorImages() {
-		String p = "D:\\Users\\wnc\\Programs\\sts-bundle\\projects\\javlib\\log9w.txt";
+		String p = "D:\\Users\\wnc\\Programs\\sts-bundle\\projects\\javlib\\log.txt";
 		List<String> readFrom = FileOp.readFrom(p, "UTF-8");
 		int count = 0;
 		for (String string : readFrom) {

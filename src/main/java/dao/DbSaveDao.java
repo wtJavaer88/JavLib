@@ -1,11 +1,14 @@
 package dao;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang.StringUtils;
+
+import com.wnc.basic.BasicStringUtil;
 
 import bean.JStar;
 import bean.JTag;
@@ -53,6 +56,37 @@ public class DbSaveDao {
 		// saveVideoMakeDesc(video);
 	}
 
+	public static void saveMakeDesc(String director, String maker, String label, String tags) throws SQLException {
+		DbFieldSqlUtil util = new DbFieldSqlUtil("JMAKEDESC", "");
+		if (BasicStringUtil.isNotNullString(director)) {
+			util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(director), "STRING"));
+			util.addInsertField(new DbField("TYPE", "1", "STRING"));
+			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		}
+
+		if (BasicStringUtil.isNotNullString(maker)) {
+			util = new DbFieldSqlUtil("JMAKEDESC", "");
+			util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(maker), "STRING"));
+			util.addInsertField(new DbField("TYPE", "2", "STRING"));
+			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		}
+
+		if (BasicStringUtil.isNotNullString(label)) {
+			util = new DbFieldSqlUtil("JMAKEDESC", "");
+			util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(label), "STRING"));
+			util.addInsertField(new DbField("TYPE", "3", "STRING"));
+			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		}
+		if (BasicStringUtil.isNotNullString(tags)) {
+			for (String tag : tags.split(",")) {
+				util = new DbFieldSqlUtil("JMAKEDESC", "");
+				util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(tag), "STRING"));
+				util.addInsertField(new DbField("TYPE", "4", "STRING"));
+				DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			}
+		}
+	}
+
 	/**
 	 * 保存Maker,Label,Director到本地,他们可以放一个表里
 	 * <p>
@@ -73,7 +107,7 @@ public class DbSaveDao {
 					new DbField("NAME", "" + StringEscapeUtils.escapeSql(video.getMaker().getName()), "STRING"));
 			util.addInsertField(
 					new DbField("URL", "" + StringEscapeUtils.escapeSql(video.getMaker().getUrl()), "STRING"));
-			util.addInsertField(new DbField("TYPE", "0", "STRING"));
+			util.addInsertField(new DbField("TYPE", "2", "STRING"));
 			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
 		}
 		if (video.getLabel() != null) {
@@ -84,7 +118,7 @@ public class DbSaveDao {
 					new DbField("NAME", "" + StringEscapeUtils.escapeSql(video.getLabel().getName()), "STRING"));
 			util.addInsertField(
 					new DbField("URL", "" + StringEscapeUtils.escapeSql(video.getLabel().getUrl()), "STRING"));
-			util.addInsertField(new DbField("TYPE", "1", "STRING"));
+			util.addInsertField(new DbField("TYPE", "3", "STRING"));
 			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
 		}
 		if (video.getDirector() != null) {
@@ -95,23 +129,29 @@ public class DbSaveDao {
 					new DbField("NAME", "" + StringEscapeUtils.escapeSql(video.getDirector().getName()), "STRING"));
 			util.addInsertField(
 					new DbField("URL", "" + StringEscapeUtils.escapeSql(video.getDirector().getUrl()), "STRING"));
-			util.addInsertField(new DbField("TYPE", "2", "STRING"));
+			util.addInsertField(new DbField("TYPE", "1", "STRING"));
 			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
 		}
+		if (video.getTags() != null) {
 
-		if (video.getStars() != null) {
-			for (JStar star : video.getStars()) {
-				if (star.getAlias() != null && star.getAlias().size() > 0) {
-					util = new DbFieldSqlUtil("JSTAR", "");
-					util.addUpdateField(new DbField("ALIAS",
-							"" + StringEscapeUtils.escapeSql(star.getAlias().toString()), "STRING"));
-					util.addUpdateField(
-							new DbField("NAME", "" + StringEscapeUtils.escapeSql(star.getName()), "STRING"));
-					util.addWhereField(new DbField("ID", "" + StringEscapeUtils.escapeSql(star.getId()), "STRING"));
-					DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
-				}
-			}
 		}
+
+		// if (video.getStars() != null) {
+		// for (JStar star : video.getStars()) {
+		// if (star.getAlias() != null && star.getAlias().size() > 0) {
+		// util = new DbFieldSqlUtil("JSTAR", "");
+		// util.addUpdateField(new DbField("ALIAS",
+		// "" + StringEscapeUtils.escapeSql(star.getAlias().toString()),
+		// "STRING"));
+		// util.addUpdateField(
+		// new DbField("NAME", "" + StringEscapeUtils.escapeSql(star.getName()),
+		// "STRING"));
+		// util.addWhereField(new DbField("ID", "" +
+		// StringEscapeUtils.escapeSql(star.getId()), "STRING"));
+		// DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+		// }
+		// }
+		// }
 
 	}
 

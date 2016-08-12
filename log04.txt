@@ -1,0 +1,32 @@
+pool-1-thread-1开始下载:http://pics.dmm.co.jp/mono/movie/adult/12fut003/12fut003pl.jpg
+pool-1-thread-2开始下载:http://pics.dmm.co.jp/mono/movie/adult/118gdw003/118gdw003pl.jpg
+pool-1-thread-3开始下载:http://pics.dmm.co.jp/mono/movie/adult/1iesp012/1iesp012pl.jpg
+pool-1-thread-4开始下载:http://pics.dmm.co.jp/mono/movie/adult/2jld019/2jld019pl.jpg
+pool-1-thread-5开始下载:http://110.imagebam.com/download/mIPxGDnMarpcinPQc3Q5Ew/35731/357309407/i244906.jpg
+pool-1-thread-6开始下载:http://av-stream.net/wp-content/uploads/2015/05/h_346gshrb00042pl1.jpg
+pool-1-thread-7开始下载:http://110.imagebam.com/download/yS9IhM0xsnt_EikgGUwv2g/38290/382893958/mum00106pl.jpg
+pool-1-thread-8开始下载:http://www.j-horse.com/p/photoip-lar050716/REBD-009.jpg
+pool-1-thread-9开始下载:http://oisinboimg.com/img_dh/picsa/2010/OSP-SCNE-001.jpg
+pool-1-thread-10开始下载:http://pics.dmm.co.jp/mono/movie/adult/3sk110/3sk110pl.jpg
+pool-1-thread-10下载未完成:http://www.j-horse.com/p/photoip-lar050716/REBD-009.jpg errMsg:http://www.j-horse.com/p/photoip-lar050716/REBD-009.jpg
+pool-1-thread-8开始下载:http://static.dyp.im/0eHICJhxLt/c41432f03dedf2b1e61c47ce0fade302.jpg
+pool-1-thread-8下载未完成:http://110.imagebam.com/download/mIPxGDnMarpcinPQc3Q5Ew/35731/357309407/i244906.jpg errMsg:http://110.imagebam.com/download/mIPxGDnMarpcinPQc3Q5Ew/35731/357309407/i244906.jpg
+pool-1-thread-5开始下载:http://img107.imagetwist.com/th/08077/8xsnvuz0v1wq.jpg
+pool-1-thread-5下载未完成:http://110.imagebam.com/download/yS9IhM0xsnt_EikgGUwv2g/38290/382893958/mum00106pl.jpg errMsg:http://110.imagebam.com/download/yS9IhM0xsnt_EikgGUwv2g/38290/382893958/mum00106pl.jpg
+pool-1-thread-7开始下载:http://javportal.net/wp-content/uploads/2015/05/51cover_VIPD-734.jpg
+pool-1-thread-7下载未完成:http://img107.imagetwist.com/th/08077/8xsnvuz0v1wq.jpg errMsg:Server returned HTTP response code: 403 for URL: http://img107.imagetwist.com/th/08077/8xsnvuz0v1wq.jpg
+pool-1-thread-5开始下载:http://pics.dmm.co.jp/mono/movie/adult/118wil056/118wil056pl.jpg
+pool-1-thread-5下载未完成:http://oisinboimg.com/img_dh/picsa/2010/OSP-SCNE-001.jpg errMsg:Server returned HTTP response code: 400 for URL: http://oisinboimg.com/img_dh/picsa/2010/OSP-SCNE-001.jpg
+pool-1-thread-9开始下载:http://pics.dmm.co.jp/mono/movie/adult/3wx101/3wx101pl.jpg
+pool-1-thread-9下载未完成:http://javportal.net/wp-content/uploads/2015/05/51cover_VIPD-734.jpg errMsg:Server returned HTTP response code: 403 for URL: http://javportal.net/wp-content/uploads/2015/05/51cover_VIPD-734.jpg
+pool-1-thread-7开始下载:http://pics.dmm.co.jp/mono/movie/adult/512vgd107/512vgd107pl.jpg
+pool-1-thread-7下载未完成:http://static.dyp.im/0eHICJhxLt/c41432f03dedf2b1e61c47ce0fade302.jpg errMsg:http://static.dyp.im/0eHICJhxLt/c41432f03dedf2b1e61c47ce0fade302.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/1iesp012/1iesp012pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/118wil056/118wil056pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/512vgd107/512vgd107pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/118gdw003/118gdw003pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/2jld019/2jld019pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/3wx101/3wx101pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/3sk110/3sk110pl.jpg
+pool-1-thread-7下载成功:http://pics.dmm.co.jp/mono/movie/adult/12fut003/12fut003pl.jpg
+pool-1-thread-7下载未完成:http://av-stream.net/wp-content/uploads/2015/05/h_346gshrb00042pl1.jpg errMsg:av-stream.net
