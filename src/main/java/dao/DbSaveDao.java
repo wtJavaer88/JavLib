@@ -155,6 +155,27 @@ public class DbSaveDao {
 
 	}
 
+	public static void insertStarAlias(String starId, String alias) throws SQLException {
+		DbFieldSqlUtil util = new DbFieldSqlUtil("JSTAR", "");
+		if (alias != null) {
+			util.addUpdateField(new DbField("ALIAS", "" + StringEscapeUtils.escapeSql(alias), "STRING"));
+			util.addWhereField(new DbField("ID", "" + StringEscapeUtils.escapeSql(starId), "STRING"));
+			System.out.println(util.getUpdateSql());
+			DbExecMgr.execOnlyOneUpdate(util.getUpdateSql());
+		}
+	}
+
+	public static void updateDescName(String descId, String descName, int type) throws SQLException {
+		DbFieldSqlUtil util = new DbFieldSqlUtil("JMAKEDESC", "");
+		if (BasicStringUtil.isNotNullString(descName)) {
+			util.addUpdateField(new DbField("NAME", "" + StringEscapeUtils.escapeSql(descName), "STRING"));
+			util.addWhereField(new DbField("ID", "" + StringEscapeUtils.escapeSql(descId), "STRING"));
+			util.addWhereField(new DbField("TYPE", "" + type, "NUMBER"));
+			System.out.println(util.getUpdateSql());
+			DbExecMgr.execOnlyOneUpdate(util.getUpdateSql());
+		}
+	}
+
 	private static String getStarAliasContent(List<String> alias) {
 		if (alias == null) {
 			return null;
