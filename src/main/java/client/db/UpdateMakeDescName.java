@@ -10,7 +10,7 @@ import dao.DbSaveDao;
 import db.DbExecMgr;
 import util.DocumentUtil;
 
-public class TagToDb {
+public class UpdateMakeDescName {
 	public static void main(String[] args) throws Exception {
 		Map map = DbExecMgr.getSelectAllSqlMap("SELECT * FROM JMAKEDESC WHERE NAME IS NULL");
 		int size = map.size();

@@ -57,32 +57,46 @@ public class DbSaveDao {
 	}
 
 	public static void saveMakeDesc(String director, String maker, String label, String tags) throws SQLException {
-		DbFieldSqlUtil util = new DbFieldSqlUtil("JMAKEDESC", "");
+		DbFieldSqlUtil util;
 		if (BasicStringUtil.isNotNullString(director)) {
+			util = new DbFieldSqlUtil("JMAKEDESC", "");
 			util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(director), "STRING"));
 			util.addInsertField(new DbField("TYPE", "1", "STRING"));
-			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			try {
+				DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			} catch (Exception e) {
+			}
 		}
 
 		if (BasicStringUtil.isNotNullString(maker)) {
 			util = new DbFieldSqlUtil("JMAKEDESC", "");
 			util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(maker), "STRING"));
 			util.addInsertField(new DbField("TYPE", "2", "STRING"));
-			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			try {
+				DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			} catch (Exception e) {
+			}
 		}
 
 		if (BasicStringUtil.isNotNullString(label)) {
 			util = new DbFieldSqlUtil("JMAKEDESC", "");
 			util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(label), "STRING"));
 			util.addInsertField(new DbField("TYPE", "3", "STRING"));
-			DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			try {
+				DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+			} catch (Exception e) {
+			}
 		}
 		if (BasicStringUtil.isNotNullString(tags)) {
 			for (String tag : tags.split(",")) {
 				util = new DbFieldSqlUtil("JMAKEDESC", "");
 				util.addInsertField(new DbField("ID", "" + StringEscapeUtils.escapeSql(tag), "STRING"));
 				util.addInsertField(new DbField("TYPE", "4", "STRING"));
-				DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+				System.out.println("Tag: " + util.getInsertSql());
+				try {
+					DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
+				} catch (Exception e) {
+				}
 			}
 		}
 	}

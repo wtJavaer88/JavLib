@@ -35,6 +35,7 @@ public class GetSrcInfoFromVideos {
 			executor.execute(new Runnable() {
 				public void run() {
 					try {
+						System.out.println(tags);
 						DbSaveDao.saveMakeDesc(director, maker, label, tags);
 					} catch (SQLException e) {
 					}
