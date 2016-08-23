@@ -18,7 +18,8 @@ public class AllStarToDb {
 			Map map = DbExecMgr.getSelectAllSqlMap("SELECT ID from JSTAR");
 			int size = map.size();
 			Map rowMap;
-			System.out.println(size);
+			System.out.println("数据库已有数据:" + size);
+			// 首先找出数据库已有的数据
 			Set<String> set = new HashSet<String>();
 			for (int i = 1; i <= size; i++) {
 				rowMap = (Map) map.get(i);
@@ -26,11 +27,11 @@ public class AllStarToDb {
 				set.add(starId);
 			}
 			System.out.println(set.size());
-
+			// 再从网站中找到所有数据
 			List<JStar> stars = new JStarsService().getAll();
-			System.out.println(stars.size());
+			System.out.println("网站数据:" + stars.size());
 			stars = CollectionUtil.removeDuplicateWithOrder(stars);
-			System.out.println(stars.size());
+			System.out.println("网站去重后的数据:" + stars.size());
 			for (JStar star : stars) {
 				try {
 					if (!set.contains(star.getId())) {

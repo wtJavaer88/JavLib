@@ -27,6 +27,7 @@ public class DbSaveDao {
 		util.addInsertField(new DbField("NAME", "" + StringEscapeUtils.escapeSql(star.getName()), "STRING"));
 		util.addInsertField(new DbField("URL", "" + StringEscapeUtils.escapeSql(star.getUrl()), "STRING"));
 		util.addInsertField(new DbField("ALIAS", "" + getStarAliasContent(star.getAlias()), "STRING"));
+		System.out.println("插入Star:" + util.getInsertSql());
 		DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
 	}
 
@@ -52,6 +53,7 @@ public class DbSaveDao {
 				"STRING"));
 		util.addInsertField(new DbField("STARS", "" + getStarsContent(video.getStars()), "STRING"));
 		util.addInsertField(new DbField("TAGS", "" + getTagsContent(video.getTags()), "STRING"));
+		System.out.println("插入Video:" + util.getInsertSql());
 		DbExecMgr.execOnlyOneUpdate(util.getInsertSql());
 		// saveVideoMakeDesc(video);
 	}

@@ -18,6 +18,7 @@ import bean.JTag;
 import bean.JVideo;
 import common.ErrorCode;
 import common.JavException;
+import datahelper.AliasHelper;
 import util.DocumentUtil;
 import util.JavStringUtil;
 
@@ -217,7 +218,10 @@ public class VideoService {
 						alias.add(spans.get(j).text());
 						j++;
 					}
-					star.setAlias(alias);
+					if (alias.size() > 0) {
+						star.setAlias(alias);
+						AliasHelper.writeAlias(star);
+					}
 					stars.add(star);
 					i = j - 1;
 				}
