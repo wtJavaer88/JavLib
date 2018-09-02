@@ -93,7 +93,7 @@ public class TagTask extends AbstractPageTask {
 		if (type == COMPLETE_STATUS_SUCCESS) {
 			log(tagName + "完成所有任务");
 		} else {
-			BasicFileUtil.writeFileString(JavConfig.TAGS_ERR_LOG, msg + "\r\n", null, true);
+			BasicFileUtil.writeFileString(JavConfig.TAGS_ERR_LOG, tagName + msg + "\r\n", null, true);
 		}
 	}
 
