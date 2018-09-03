@@ -1,4 +1,4 @@
-package com.wnc.javlib;
+package com.wnc.javlib.tag;
 
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.nodes.Element;

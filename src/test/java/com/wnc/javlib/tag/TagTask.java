@@ -1,4 +1,4 @@
-package com.wnc.javlib;
+package com.wnc.javlib.tag;
 
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -77,7 +77,7 @@ public class TagTask extends AbstractPageTask {
 	@Override
 	protected void errLog404(Page page) {
 		super.errLog404(page);
-		if (page.getHtml().contains("http://www.javlibrary.com")) {
+		if (!page.getHtml().contains("http://www.javlibrary.com")) {
 			ignoreComplete = true;
 			retryMonitor(tagName + "重试404");
 		}

@@ -1,7 +1,6 @@
 package com.wnc.javlib.entity;
 
 public class JTag {
-	private int id;
 	private String tagCode;
 	private String tagName;
 
@@ -31,11 +30,4 @@ public class JTag {
 		this.tagName = tagName;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 }

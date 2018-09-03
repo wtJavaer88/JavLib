@@ -1,4 +1,4 @@
-package com.wnc.javlib;
+package com.wnc.javlib.tag;
 
 import java.io.IOException;
 import java.util.Map;

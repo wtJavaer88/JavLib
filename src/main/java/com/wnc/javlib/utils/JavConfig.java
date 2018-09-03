@@ -20,7 +20,12 @@ public class JavConfig {
 
 	public static final String MV_DETAIL_SFT = DOMAIN + "/?v=%s";
 
-	public static final String APP_DIR = "F:\\资源\\爬虫\\javlib\\";
+	public static final String APP_DIR = "G:\\data\\spider\\javlib\\";
+
+	public static final String MOVIES_DIR = APP_DIR + "movies\\";
+	public static final String MOVIES_LOG = MOVIES_DIR + "movies-log.txt";
+	public static final String MOVIES_ERR_LOG = MOVIES_DIR + "movies-err-log.txt";
+
 	public static final String TAG_MOVIE_DIR = APP_DIR + "tags\\";
 
 	public static final String TAGS_FILE = APP_DIR + "tags.txt";
@@ -29,6 +34,7 @@ public class JavConfig {
 
 	static {
 		BasicFileUtil.makeDirectory(APP_DIR);
+		BasicFileUtil.makeDirectory(MOVIES_DIR);
 		BasicFileUtil.makeDirectory(TAG_MOVIE_DIR);
 	}
 }

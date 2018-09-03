@@ -4,7 +4,7 @@ import spiderqueue.core.DbEntity;
 
 import java.util.List;
 
-public class JMovie implements DbEntity {
+public class JMovie{
 	private int id;
 	private String movieCode;
 	private String title;
@@ -33,7 +33,8 @@ public class JMovie implements DbEntity {
 	private int cnComments;
 	private int cnReviews;
 
-	private String lastUpdateDate;
+	private char singleStar;// 是否单体作品, Y或N, 或null(演员列表为空)
+
 
 	public String getMonoImg() {
 		return monoImg;
@@ -42,8 +43,6 @@ public class JMovie implements DbEntity {
 	public void setMonoImg(String monoImg) {
 		this.monoImg = monoImg;
 	}
-
-	private char singleStar;// 是否单体作品, 1或0
 
 	public char getSingleStar() {
 		return singleStar;
@@ -62,10 +61,6 @@ public class JMovie implements DbEntity {
 
 	public JMovie() {
 		// TODO Auto-generated constructor stub
-	}
-
-	public String getLogKey() {
-		return "[" + movieCode + "]";
 	}
 
 	public int getId() {
@@ -218,14 +213,6 @@ public class JMovie implements DbEntity {
 
 	public void setCnReviews(int cnReviews) {
 		this.cnReviews = cnReviews;
-	}
-
-	public String getLastUpdateDate() {
-		return lastUpdateDate;
-	}
-
-	public void setLastUpdateDate(String lastUpdateDate) {
-		this.lastUpdateDate = lastUpdateDate;
 	}
 
 	public List<JavComment> getComments() {

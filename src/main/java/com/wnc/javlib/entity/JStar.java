@@ -4,8 +4,7 @@ import spiderqueue.core.DbEntity;
 
 import java.util.List;
 
-public class JStar implements DbEntity {
-	private int id;
+public class JStar  {
 	private char head;
 	private String starCode;
 	private String name;
@@ -38,18 +37,6 @@ public class JStar implements DbEntity {
 
 	public void setHead(char head) {
 		this.head = head;
-	}
-
-	public String getLogKey() {
-		return "[" + starCode + "-" + name + "]";
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getStarCode() {

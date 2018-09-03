@@ -1,17 +1,27 @@
 package com.wnc.javlib.entity;
-
+//http://v22q.com/cn/user.php?u=qiqutt
 public class JavUser {
     private String uid;
     private String nick;
     private String country;
     // 发表文章数
-    private Integer articleCount;
+    private Integer userposts;
 
     private String desc;
     private String province;
     private String city;
     //想要影片
     private Integer want;
+    //看过
+    private Integer watched;
+
+    public Integer getWatched() {
+        return watched;
+    }
+
+    public void setWatched(Integer watched) {
+        this.watched = watched;
+    }
 
     public String getUid() {
         return uid;
@@ -37,12 +47,12 @@ public class JavUser {
         this.country = country;
     }
 
-    public Integer getArticleCount() {
-        return articleCount;
+    public Integer getUserposts() {
+        return userposts;
     }
 
-    public void setArticleCount(Integer articleCount) {
-        this.articleCount = articleCount;
+    public void setUserposts(Integer userposts) {
+        this.userposts = userposts;
     }
 
     public String getDesc() {

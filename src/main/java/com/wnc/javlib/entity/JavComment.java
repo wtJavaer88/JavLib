@@ -1,19 +1,50 @@
 package com.wnc.javlib.entity;
 
 public class JavComment {
-    private String commentId;
+    private int commentId;
     // 4000長度
     private String content;
     private JavUser user;
     private String date;
+    private int upvote;
+    private int downvote;
+    private int type = 1; // 0:review, 1:comment
 
-    private Integer type; // 0:review, 1:comment
+    private int score;
 
-    public String getCommentId() {
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getUpvote() {
+        return upvote;
+    }
+
+    public void setUpvote(int upvote) {
+        this.upvote = upvote;
+    }
+
+    public int getDownvote() {
+        return downvote;
+    }
+
+    public void setDownvote(int downvote) {
+        this.downvote = downvote;
+    }
+
+    public int getCommentId() {
         return commentId;
     }
 
-    public void setCommentId(String commentId) {
+    public void setCommentId(int commentId) {
         this.commentId = commentId;
     }
 
