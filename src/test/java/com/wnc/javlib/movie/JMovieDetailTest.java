@@ -6,6 +6,7 @@ import com.wnc.javlib.utils.JavConfig;
 import com.wnc.javlib.utils.ProxyUtil;
 import com.wnc.string.PatternUtil;
 import com.wnc.tools.FileOp;
+import com.wnc.tools.SoupUtil;
 import org.junit.Test;
 
 import java.io.File;
@@ -26,6 +27,10 @@ public class JMovieDetailTest {
 
     @Test
     public void testAll() throws IOException, InterruptedException {
+        List<String> strings1 = FileOp.readFrom(JavConfig.MOVIES_LOG);
+        for(String s : strings1) {
+            movieSeekSet.add(s.replace("成功结束!",""));
+        }
         new ProxyUtil().initProxyPool();
         for(File moduleFile : new File(JavConfig.TAG_MOVIE_DIR).listFiles()) {
             if(moduleFile.getName().contains("log")){
@@ -34,12 +39,13 @@ public class JMovieDetailTest {
             List<String> strings = FileOp.readFrom(moduleFile.getAbsolutePath());
             for(String s : strings) {
                 String urlCode = PatternUtil.getLastPatternGroup(s, "\"url\":\"\\./\\?v=(.*?)\"");
-                if(movieSeekSet.contains(urlCode)){
-                    continue;
-                }
                 String moduleName = moduleFile.getName().replace(".txt", "");
-//                new MovieDetailTask("javli7iz4y", "美少女").run();
-                SpiderHttpClient.getInstance().getNetPageThreadPool().execute(new MovieDetailTask(urlCode, moduleName));
+                if(movieSeekSet.add(urlCode)) {
+                    SpiderHttpClient.getInstance().getNetPageThreadPool().execute(new MovieDetailTask(urlCode, moduleName));
+                }
+                else{
+                    System.out.println("in task queue..."+urlCode);
+                }
             }
         }
         Thread.sleep(100000000000000000L);

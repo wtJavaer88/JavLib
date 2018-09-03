@@ -5,7 +5,6 @@ import spiderqueue.core.DbEntity;
 import java.util.List;
 
 public class JMovie{
-	private int id;
 	private String movieCode;
 	private String title;
 	private String url;// 相对地址
@@ -52,23 +51,14 @@ public class JMovie{
 		this.singleStar = singleStar;
 	}
 
-	public JMovie(String movie_code, String title, String url) {
+	public JMovie(String movieCode, String title, String url) {
 		super();
-		this.movieCode = movie_code;
+		this.movieCode = movieCode;
 		this.title = title;
 		this.url = url;
 	}
 
 	public JMovie() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getMovieCode() {

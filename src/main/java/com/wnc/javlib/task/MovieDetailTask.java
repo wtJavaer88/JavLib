@@ -21,8 +21,6 @@ public class MovieDetailTask extends AbstractPageTask {
     private final String urlCode;
     private final String moduleName;
 
-    public static Set<String> movieSeekSet = Collections.synchronizedSet(new HashSet<String>());
-
     static {
         retryMap.put(MovieDetailTask.class, new ConcurrentHashMap<String, Integer>());
     }
@@ -37,10 +35,6 @@ public class MovieDetailTask extends AbstractPageTask {
 
     @Override
     public void run() {
-        //如果已经抓过, 就忽视
-        if(movieSeekSet.contains(this.urlCode)){
-            return ;
-        }
         super.run();
     }
 
@@ -79,7 +73,6 @@ public class MovieDetailTask extends AbstractPageTask {
         super.complete(type, msg);
 
         if (type == COMPLETE_STATUS_SUCCESS) {
-            movieSeekSet.add(this.urlCode);
             BasicFileUtil.writeFileString(JavConfig.MOVIES_LOG, urlCode + "成功结束!\r\n", null,
                     true);
         } else {
