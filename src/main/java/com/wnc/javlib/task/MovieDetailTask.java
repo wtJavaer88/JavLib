@@ -57,7 +57,6 @@ public class MovieDetailTask extends AbstractPageTask {
                 saveFile, JSONObject.toJSONString(jMovie, SerializerFeature.DisableCircularReferenceDetect) + "\r\n",
                 null, true);
 
-        SpiderHttpClient.parseCount.getAndIncrement();
     }
 
     @Override
