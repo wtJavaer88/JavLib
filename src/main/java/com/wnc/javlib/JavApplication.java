@@ -27,11 +27,10 @@ public class JavApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("项目启动...");
 
-        new ProxyUtil().initProxyPool();
-
-        doSomething();
-
         if (args != null && args.length > 0) {
+            new ProxyUtil().initProxyPool();
+            doSomething();
+
             while (true) {
                 Thread.sleep(10000000L);
             }
