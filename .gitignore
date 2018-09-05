@@ -4,6 +4,7 @@ ehthumbs.db
 /target/
 tts/
 target
+.idea
 
 # Folder config file
 Desktop.ini
