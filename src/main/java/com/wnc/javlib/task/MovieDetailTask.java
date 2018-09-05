@@ -6,24 +6,23 @@ import com.crawl.spider.SpiderHttpClient;
 import com.crawl.spider.entity.Page;
 import com.crawl.spider.task.AbstractPageTask;
 import com.wnc.basic.BasicFileUtil;
-import com.wnc.javlib.entity.JMovie;
+import com.wnc.javlib.jpa.JMovieService;
+import com.wnc.javlib.jpa.entity.JMovie;
 import com.wnc.javlib.service.MovieDetailImpl;
 import com.wnc.javlib.utils.JavConfig;
 import org.jsoup.nodes.Document;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class MovieDetailTask extends AbstractPageTask {
-    private boolean ignoreComplete = false;
-    private final String urlCode;
-    private final String moduleName;
-
     static {
         retryMap.put(MovieDetailTask.class, new ConcurrentHashMap<String, Integer>());
     }
+
+    private final String urlCode;
+    private final String moduleName;
+    private boolean ignoreComplete = false;
+    private JMovieService jMovieService = SpringContextUtils.getJMovieService();
 
 
     public MovieDetailTask(String urlCode, String moduleName) {
@@ -44,17 +43,18 @@ public class MovieDetailTask extends AbstractPageTask {
         if (!page.getHtml().contains("http://www.javlibrary.com")) {
             ignoreComplete = true;
             retryMonitor(url + "页面内容不符,重试");
-            return ;
+            return;
         }
         JMovie jMovie = new MovieDetailImpl().getMovieDetail(doc);
         jMovie.setUrl(urlCode);
+        jMovieService.insertMovie(jMovie);
         saveMovieDetailFile(jMovie);
     }
 
     private void saveMovieDetailFile(JMovie jMovie) {
         String saveFile = JavConfig.MOVIES_DIR + moduleName + ".txt";
         BasicFileUtil.writeFileString(
-                saveFile, JSONObject.toJSONString(jMovie, SerializerFeature.DisableCircularReferenceDetect)+"\r\n",
+                saveFile, JSONObject.toJSONString(jMovie, SerializerFeature.DisableCircularReferenceDetect) + "\r\n",
                 null, true);
 
         SpiderHttpClient.parseCount.getAndIncrement();
@@ -71,7 +71,7 @@ public class MovieDetailTask extends AbstractPageTask {
             return;
         }
         super.complete(type, msg);
-
+        SpiderHttpClient.parseCount.getAndIncrement();
         if (type == COMPLETE_STATUS_SUCCESS) {
             BasicFileUtil.writeFileString(JavConfig.MOVIES_LOG, urlCode + "成功结束!\r\n", null,
                     true);

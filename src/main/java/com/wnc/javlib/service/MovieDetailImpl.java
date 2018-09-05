@@ -1,10 +1,16 @@
 package com.wnc.javlib.service;
 
-import com.wnc.basic.BasicDateUtil;
 import com.wnc.basic.BasicNumberUtil;
-import com.wnc.javlib.entity.*;
+import com.wnc.javlib.enums.MakeDescEnum;
+import com.wnc.javlib.jpa.entity.JMakeDesc;
+import com.wnc.javlib.jpa.entity.JMovie;
+import com.wnc.javlib.jpa.entity.JStar;
+import com.wnc.javlib.jpa.entity.JTag;
+import com.wnc.javlib.jpa.entity.JavComment;
+import com.wnc.javlib.jpa.entity.JavUser;
 import com.wnc.string.PatternUtil;
 import common.spider.node.MyElement;
+import org.apache.commons.lang.StringUtils;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -14,15 +20,16 @@ import java.util.Collection;
 import java.util.List;
 
 public class MovieDetailImpl implements IMovieService {
-
     public JMovie getMovieDetail(Document doc) {
         JMovie movie = new JMovie();
         movie.setMovieCode(doc.select("#video_id .text").text().trim());
         movie.setStars(getStars(doc));
         if (movie.getStars().size() > 1) {
             movie.setSingleStar('N');
-        } else if (movie.getStars().size() == 1){
+        } else if (movie.getStars().size() == 1) {
             movie.setSingleStar('Y');
+        } else {
+            movie.setSingleStar('-');
         }
         movie.setImg(getImg(doc));
         movie.setLength(getLength(doc));
@@ -40,6 +47,7 @@ public class MovieDetailImpl implements IMovieService {
             }
         }
 
+        movie.setTitle(getTitle(doc));
         movie.setPublishDate(getPublishDate(doc));
         movie.setScore(getScore(doc));
         movie.setTags(getTags(doc));
@@ -48,19 +56,35 @@ public class MovieDetailImpl implements IMovieService {
 
         getFavInfo(doc, movie);
 
-        movie.setComments(getComments(doc));
-
+        List<JavComment> comments = getComments(doc, movie.getMovieCode());
+        movie.setComments(comments);
+        int hasTorrent = 0;
+        int cmtPics = 0;
+        for (JavComment cmt : comments) {
+            String content = cmt.getContent();
+            if (StringUtils.isNotBlank(content) && content.matches(".*?(點擊進入下載|点击进入下载|magnet:\\?xt=|\\.torrent).*?")) {
+                hasTorrent += 1;
+            }
+            cmtPics += PatternUtil.getAllPatternGroup(content, "\\[img\\].*?\\[/img\\]").size();
+        }
+        movie.setHasTorrent(hasTorrent);
+        movie.setCmtPics(cmtPics);
+        movie.setCmtCount(comments.size());
         return movie;
     }
 
-    private List<JavComment> getComments(Document doc) {
+    private String getTitle(Document doc) {
+        return doc.select("#video_title > h3").text();
+    }
+
+    private List<JavComment> getComments(Document doc, String mCode) {
         List<JavComment> list = new ArrayList<JavComment>();
-        getComments(list, doc.select("#video_reviews table.review"), 0);
-        getComments(list, doc.select("#video_comments table.comment"), 1);
+        getComments(list, doc.select("#video_reviews table.review"), 0, mCode);
+        getComments(list, doc.select("#video_comments table.comment"), 1, mCode);
         return list;
     }
 
-    private void getComments(List<JavComment> list, Elements select, int type) {
+    private void getComments(List<JavComment> list, Elements select, int type, String mCode) {
         for (int i = 0; i < select.size(); i++) {
             JavComment javComment = new JavComment();
             JavUser javUser = new JavUser();
@@ -101,6 +125,7 @@ public class MovieDetailImpl implements IMovieService {
             javComment.setType(type);
             javComment.setDownvote(voteDown);
             javComment.setUpvote(voteUp);
+            javComment.setMovieCode(mCode);
 
             list.add(javComment);
         }
@@ -115,8 +140,12 @@ public class MovieDetailImpl implements IMovieService {
             if (starUrl == null) {
                 continue;
             }
-            star.setStarCode(new MyElement(starUrl).pattern4Attr("href", "s=(.*+)"));
+            String starCode = new MyElement(starUrl).pattern4Attr("href", "s=(.*+)");
+            star.setStarCode(starCode);
             star.setName(starUrl.text());
+            if(starCode.length() > 0) {
+                star.setHead(starCode.charAt(0));
+            }
 
             Elements select2 = element.select(".alias");
             List<String> alias = new ArrayList<String>();
@@ -124,6 +153,7 @@ public class MovieDetailImpl implements IMovieService {
                 alias.add(element2.text().trim());
             }
             star.setAliasName(alias);
+            star.cvtAlias();
             stars.add(star);
         }
         return stars;
