@@ -5,6 +5,7 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.crawl.spider.SpiderHttpClient;
 import com.crawl.spider.entity.Page;
 import com.crawl.spider.task.AbstractPageTask;
+import com.wnc.basic.BasicDateUtil;
 import com.wnc.basic.BasicFileUtil;
 import com.wnc.javlib.jpa.JMovieService;
 import com.wnc.javlib.jpa.entity.JMovie;
@@ -54,7 +55,7 @@ public class MovieDetailTask extends AbstractPageTask {
     private void saveMovieDetailFile(JMovie jMovie) {
         String saveFile = JavConfig.MOVIES_DIR + moduleName + ".txt";
         BasicFileUtil.writeFileString(
-                saveFile, JSONObject.toJSONString(jMovie, SerializerFeature.DisableCircularReferenceDetect) + "\r\n",
+                saveFile, BasicDateUtil.getCurrentDateTimeString()+" "+JSONObject.toJSONString(jMovie, SerializerFeature.DisableCircularReferenceDetect) + "\r\n",
                 null, true);
 
     }
@@ -72,10 +73,10 @@ public class MovieDetailTask extends AbstractPageTask {
         super.complete(type, msg);
         SpiderHttpClient.parseCount.getAndIncrement();
         if (type == COMPLETE_STATUS_SUCCESS) {
-            BasicFileUtil.writeFileString(JavConfig.MOVIES_LOG, urlCode + "成功结束!\r\n", null,
+            BasicFileUtil.writeFileString(JavConfig.MOVIES_LOG, BasicDateUtil.getCurrentDateTimeString()+" "+urlCode + "成功结束!\r\n", null,
                     true);
         } else {
-            BasicFileUtil.writeFileString(JavConfig.MOVIES_ERR_LOG, urlCode + ":" + msg + "\r\n", null, true);
+            BasicFileUtil.writeFileString(JavConfig.MOVIES_ERR_LOG, BasicDateUtil.getCurrentDateTimeString()+" "+urlCode + ":" + msg + "\r\n", null, true);
         }
     }
 

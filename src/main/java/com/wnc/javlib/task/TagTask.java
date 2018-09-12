@@ -1,4 +1,4 @@
-package com.wnc.javlib.tag;
+package com.wnc.javlib.task;
 
 import com.alibaba.fastjson.JSONObject;
 import com.crawl.spider.SpiderHttpClient;
@@ -6,6 +6,7 @@ import com.crawl.spider.entity.Page;
 import com.crawl.spider.task.AbstractPageTask;
 import com.wnc.basic.BasicFileUtil;
 import com.wnc.javlib.utils.JavConfig;
+import com.wnc.javlib.utils.JavSpiderUtils;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;

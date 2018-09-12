@@ -8,7 +8,8 @@ public class JavConfig {
     /**
      * Tag下面所有的影片
      */
-    public static final String TAG_MOVIE_SFT = DOMAIN + "/vl_genre.php?&mode=2&g=%s&page=%d";
+    public static final String TAG_MOVIE_SFT = DOMAIN + "/vl_genre.php?&mode=2&g=%s&page=%d";//缩略图模式
+    public static final String TAG_CHECK_MOVIE_SFT = DOMAIN + "/vl_genre.php?list&mode=2&g=%s&page=%d";//文字列表模式
     /**
      * 演员的所有影片
      */
@@ -41,9 +42,14 @@ public class JavConfig {
     public static final String TAGS_LOG = TAG_MOVIE_DIR + "tags-log.txt";
     public static final String TAGS_ERR_LOG = TAG_MOVIE_DIR + "tags-err-log.txt";
 
+    public static final String TAG_CHECK_MOVIE_DIR = APP_DIR + "tags-check\\";
+    public static final String TAGS_CHECK_LOG = TAG_CHECK_MOVIE_DIR + "tags-check-log.txt";
+    public static final String TAGS_CHECK_ERR_LOG = TAG_CHECK_MOVIE_DIR + "tags-err-log.txt";
+
     static {
         BasicFileUtil.makeDirectory(APP_DIR);
         BasicFileUtil.makeDirectory(MOVIES_DIR);
         BasicFileUtil.makeDirectory(TAG_MOVIE_DIR);
+        BasicFileUtil.makeDirectory(TAG_CHECK_MOVIE_DIR);
     }
 }

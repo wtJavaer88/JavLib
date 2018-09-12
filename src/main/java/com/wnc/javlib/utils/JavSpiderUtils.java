@@ -1,4 +1,4 @@
-package com.wnc.javlib.tag;
+package com.wnc.javlib.utils;
 
 import com.wnc.basic.BasicNumberUtil;
 import com.wnc.string.PatternUtil;

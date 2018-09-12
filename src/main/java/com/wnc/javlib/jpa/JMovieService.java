@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import javax.transaction.Transactional;
+
 @Service
 public class JMovieService {
     @Autowired
@@ -31,6 +33,27 @@ public class JMovieService {
     @Autowired
     private JStarRepository jStarRepository;
 
+    /**
+     * @Description 已存在返回true
+     * @Date 9:34 2018/9/12
+     * @Param [jMovie]
+     * @return boolean
+    */
+    @Transactional
+    public synchronized boolean insertMonoMovie(JMovie jMovie) {
+        try {
+            if(jMovieRepository.findOne(jMovie.getMovieCode()) != null){
+                return false;
+            }
+            insertMovie(jMovie);
+        } catch (Exception e) {
+            e.printStackTrace();
+            BasicFileUtil.writeFileString(JavConfig.APP_DIR + "jpa-mv-err.log", jMovie.getMovieCode() + ":" + e.getMessage() + "\r\n", null, true);
+        }
+        return true;
+    }
+
+    @Transactional
     public synchronized void insertMovie(JMovie jMovie) {
         try {
             if (!CollectionUtils.isEmpty(jMovie.getStars())) {
@@ -65,5 +88,10 @@ public class JMovieService {
             e.printStackTrace();
             BasicFileUtil.writeFileString(JavConfig.APP_DIR + "jpa-mv-err.log", jMovie.getMovieCode() + ":" + e.getMessage() + "\r\n", null, true);
         }
+    }
+
+    @Transactional
+    public void updateMovie(JMovie jMovie) {
+        jMovieRepository.updateTorrent(jMovie.getHasTorrent(), jMovie.getMovieCode());
     }
 }

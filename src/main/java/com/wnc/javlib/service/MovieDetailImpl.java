@@ -62,7 +62,7 @@ public class MovieDetailImpl implements IMovieService {
         int cmtPics = 0;
         for (JavComment cmt : comments) {
             String content = cmt.getContent();
-            if (StringUtils.isNotBlank(content) && content.matches(".*?(點擊進入下載|点击进入下载|magnet:\\?xt=|\\.torrent).*?")) {
+            if (StringUtils.isNotBlank(content) && content.toLowerCase().matches(".*?(點擊進入下載|點擊下載|点击下载|点此下载|点击进入下载|ed2k:|magnet:\\?xt=|thunder:|\\.torrent).*?")) {
                 hasTorrent += 1;
             }
             cmtPics += PatternUtil.getAllPatternGroup(content, "\\[img\\].*?\\[/img\\]").size();

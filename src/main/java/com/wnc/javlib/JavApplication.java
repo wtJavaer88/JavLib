@@ -10,11 +10,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableScheduling
 @EnableJpaRepositories(basePackages = {"com.wnc"})
 @EnableJpaAuditing
+@EnableTransactionManagement
 public class JavApplication implements CommandLineRunner {
     @Autowired
     private JavSpy javSpy;
@@ -29,7 +31,7 @@ public class JavApplication implements CommandLineRunner {
 
         if (args != null && args.length > 0) {
             new ProxyUtil().initProxyPool();
-            doSomething();
+            spyFromTagDir();
 
             while (true) {
                 Thread.sleep(10000000L);
@@ -37,7 +39,7 @@ public class JavApplication implements CommandLineRunner {
         }
     }
 
-    private void doSomething() {
+    private void spyFromTagDir() {
         javSpy.getAll();
     }
 }

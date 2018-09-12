@@ -41,8 +41,8 @@ public class JMovie extends BaseEntity {
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "JMovieTagRls", joinColumns = {
-            @JoinColumn(name = "tag_code")}, inverseJoinColumns = {
-            @JoinColumn(name = "movie_code")}, uniqueConstraints = {@UniqueConstraint(columnNames = {"movie_code", "tag_code"})})
+            @JoinColumn(name = "movie_code")}, inverseJoinColumns = {
+            @JoinColumn(name = "tag_code")}, uniqueConstraints = {@UniqueConstraint(columnNames = {"movie_code", "tag_code"})})
     private List<JTag> tags;// 标签
 
     @Transient

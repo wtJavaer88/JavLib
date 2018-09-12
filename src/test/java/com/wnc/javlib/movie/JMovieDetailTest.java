@@ -23,7 +23,7 @@ public class JMovieDetailTest {
     @Test
     public void testOne() throws IOException, InterruptedException {
 //        new ProxyUtil().initProxyPool();
-        new MovieDetailTask("javli7iz2u", "美少女").run();
+        new MovieDetailTask("javli7ijsa", "偷窥").run();
     }
 
     @Test
