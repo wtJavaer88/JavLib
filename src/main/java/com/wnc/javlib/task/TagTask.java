@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.crawl.spider.SpiderHttpClient;
 import com.crawl.spider.entity.Page;
 import com.crawl.spider.task.AbstractPageTask;
+import com.crawl.spider.task.retry.RetryConstruct;
+import com.crawl.spider.task.retry.RetryConstructParam;
 import com.wnc.basic.BasicFileUtil;
 import com.wnc.javlib.utils.JavConfig;
 import com.wnc.javlib.utils.JavSpiderUtils;
@@ -11,30 +13,18 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.util.concurrent.ConcurrentHashMap;
-
 public class TagTask extends AbstractPageTask {
-    static {
-        retryMap.put(TagTask.class, new ConcurrentHashMap<String, Integer>());
-    }
-
-    private boolean ignoreComplete = false;
     private String tagName;
     private String tagCode;
     private int curPage;
 
-    public TagTask(String tagName, String tagCode, int curPage) {
+    @RetryConstruct
+    public TagTask(@RetryConstructParam("tagName") String tagName, @RetryConstructParam("tagCode")String tagCode,
+                   @RetryConstructParam("curPage") int curPage) {
         this.tagName = tagName;
         this.tagCode = tagCode;
         this.curPage = curPage;
         this.url = String.format(JavConfig.TAG_MOVIE_SFT, tagCode, curPage);
-        this.proxyFlag = true;
-        MAX_RETRY_TIMES = 20;
-    }
-
-    @Override
-    protected void retry() {
-        SpiderHttpClient.getInstance().getNetPageThreadPool().execute(new TagTask(tagName, tagCode, curPage));
     }
 
     @Override
@@ -75,19 +65,7 @@ public class TagTask extends AbstractPageTask {
     }
 
     @Override
-    protected void errLog404(Page page) {
-        super.errLog404(page);
-        if (!page.getHtml().contains("http://www.javlibrary.com")) {
-            ignoreComplete = true;
-            retryMonitor(tagName + "重试404");
-        }
-    }
-
-    @Override
     protected void complete(int type, String msg) {
-        if (ignoreComplete) {
-            return;
-        }
         super.complete(type, msg);
 
         if (type == COMPLETE_STATUS_SUCCESS) {
@@ -105,12 +83,4 @@ public class TagTask extends AbstractPageTask {
         BasicFileUtil.writeFileString(JavConfig.TAG_MOVIE_DIR + tagName + ".txt",
                 JSONObject.toJSONString(hrefDom) + "\r\n", null, true);
     }
-
-    @Override
-    protected void errLogExp(Exception ex) {
-        super.errLogExp(ex);
-        System.err.println(tagName + url);
-        ex.printStackTrace();
-    }
-
 }

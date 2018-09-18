@@ -5,6 +5,8 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.crawl.spider.SpiderHttpClient;
 import com.crawl.spider.entity.Page;
 import com.crawl.spider.task.AbstractPageTask;
+import com.crawl.spider.task.retry.RetryConstruct;
+import com.crawl.spider.task.retry.RetryConstructParam;
 import com.wnc.basic.BasicDateUtil;
 import com.wnc.basic.BasicFileUtil;
 import com.wnc.javlib.jpa.JMovieService;
@@ -13,29 +15,16 @@ import com.wnc.javlib.service.MovieDetailImpl;
 import com.wnc.javlib.utils.JavConfig;
 import org.jsoup.nodes.Document;
 
-import java.util.concurrent.ConcurrentHashMap;
-
 public class MovieDetailTask extends AbstractPageTask {
-    static {
-        retryMap.put(MovieDetailTask.class, new ConcurrentHashMap<String, Integer>());
-    }
-
     private final String urlCode;
     private final String moduleName;
-    private boolean ignoreComplete = false;
     private JMovieService jMovieService = SpringContextUtils.getJMovieService();
 
-
-    public MovieDetailTask(String urlCode, String moduleName) {
+    @RetryConstruct
+    public MovieDetailTask(@RetryConstructParam("urlCode") String urlCode,@RetryConstructParam("moduleName") String moduleName) {
         super(String.format(JavConfig.MV_DETAIL_SFT, urlCode), true);
         this.urlCode = urlCode;
         this.moduleName = moduleName;
-        MAX_RETRY_TIMES = 20;
-    }
-
-    @Override
-    public void run() {
-        super.run();
     }
 
     @Override
@@ -61,15 +50,7 @@ public class MovieDetailTask extends AbstractPageTask {
     }
 
     @Override
-    public void retry() {
-        SpiderHttpClient.getInstance().getNetPageThreadPool().execute(new MovieDetailTask(urlCode, moduleName));
-    }
-
-    @Override
     protected void complete(int type, String msg) {
-        if (ignoreComplete) {
-            return;
-        }
         super.complete(type, msg);
         SpiderHttpClient.parseCount.getAndIncrement();
         if (type == COMPLETE_STATUS_SUCCESS) {
@@ -78,21 +59,5 @@ public class MovieDetailTask extends AbstractPageTask {
         } else {
             BasicFileUtil.writeFileString(JavConfig.MOVIES_ERR_LOG, BasicDateUtil.getCurrentDateTimeString()+" "+urlCode + ":" + msg + "\r\n", null, true);
         }
-    }
-
-    @Override
-    protected void errLog404(Page page) {
-        super.errLog404(page);
-        if (!page.getHtml().contains("http://www.javlibrary.com")) {
-            ignoreComplete = true;
-            retryMonitor(url + "重试404");
-        }
-    }
-
-    @Override
-    protected void errLogExp(Exception ex) {
-        super.errLogExp(ex);
-        System.err.println(url);
-        ex.printStackTrace();
     }
 }

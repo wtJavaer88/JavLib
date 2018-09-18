@@ -34,8 +34,8 @@ public class TagCheckTest {
 
     @Test
     public void testTagCheckTaskAll() throws IOException, InterruptedException {
-        //上次爬取的日期
-        TagCheckTask.LAST_SPY_DAY = "2018-09-06";
+        //上次爬取的日期, 数据库movie表看最近一个影片插入的时间
+        TagCheckTask.LAST_SPY_DAY = "2018-09-12";
         new ProxyUtil().initProxyPool();
         String join = StringUtils.join(FileOp.readFrom(JavConfig.TAGS_FILE), "");
         JSONObject parseObject = JSONObject.parseObject(join);
